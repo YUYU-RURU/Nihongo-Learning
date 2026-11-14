@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>にほんご練習帳 — 50 音・N5 單字・YouTube 雙語字幕</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400&display=swap" rel="stylesheet">
+<style>
+/* 字源草書用字型：Liu Jian Mao Cao（SIL OFL）子集，只含字源漢字 */
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAAO8AA0AAAAABqwAAANsAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYAA0EQgKhGyEBQE2AiQDCAsGAAQgBYQIByAMBxtbBVFUL44AfibYtg7WDtGMOOLRZradhcahkTU7/yP4fr/fnncvosk0kwjRrJI0QQpUkmjz6aaRBiFTvWn89z+3G1byj5h6m+kNsdKJgddpVez/5vSnA7JlcmMSFgBUhcxtfHlzRy+xJVAbKyBfdCr77acf8l6vHQFERAyIjKRCxiVjR8KfKJGUNy7936mas1jeCXwKBTkiY80uW1aqrglS09NYgQNYm8DY6jZkQasowofYLucsAe05fccqtFCsGFaAqf1VLAj7Q5nNVFo0OFxfw23pvZKbYqVbkN6KY0A9jmO9e3oACiQ0sIoztulBmYrZ0oOuAznqCFBght+vUOiRn+hl8E9Bfn/uS56V4vLgi40C2STpIEmDPFF5AWjYNOMvYxybzRZekpD5terQujUzLprZFlK6aAIoeVpYF1666HgtopiojRrlqBghRpLuxMxSmtY68cJfEGfdqLZck5C6xx9MtLJQNtGuBDVREowTkFtEl7LcXermnEvIKeLWslWQvNHolSugYbcTq3b2YWYsnGRBYmZcQpxa3panLQgxY/xrGOoqLKlaL2o1xxSCik5sruMN+tCl4K/jclr+1+JZLZFVVDmDihMBN1QmDjoWWhuRFcxkCVjSTwDEj3tgZ8EdsRMsIJXUCBD2hKDG3pIVN5fsJMDOKy3ZyuzPD820PsiInZUE4KJ6CIBYGUhgo5sqS3Y6/DU7jUJOdMjAj9s8MA8sO4RCBmbcduYHACIA2pAqQEyaFsEFO54E1IJ8SMzMmpeDow9YWqpkVtm52EYsF2acFD1T8eTCTrWLKAM0gwq0bOByAjVzo4QXKkvJXtpJWmIkw24QpR/i5EKJB1EAgfB48bvo3K7IPkRKb/DUfogAvHY29uFaiiUpeQFUKLip/JpBFkETN1BMr4g9WJKH40UGgbiLo7cITGuFGVaRq/AMQOhxh0K9L0j6fSHrizEo0xZnj1KuNy5hHjJdbMlEkj0iLCgkiZiS8Igu2QHRJqMZiB4aIipnPLSdKXisTlFyAJEEbe0QTn3ynmknLSDgZGd+Ijm62wOGHwvpAkQIiTQ8ATLs7QRoZAdKLrZOm+V1rky7GOOJDjS0rRC/oKCIjLKqurWMjkaFCk/4sO13Wb5DNMfb2pEh9Rx29d7YyvCVHvSZvwn96qT5HgA=) format('woff2');unicode-range:U+65BC}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAANQAA0AAAAABgwAAAMAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYAA0EQgKg0yDAQE2AiQDCAsGAAQgBYQIByAMBxvXBBHVm8VAfhw4ZcuDXAma5yRVsI5NblIc6+OfOB6+36+d++5bxJIm5kcyIVKpJkk70TMeyjaG7F0bWzoaIgEwpVPfzAFgDUryDiHKdohxKqmpeqcCT8TD1p1IV6dpwDIHmLLjhxzR2jhAoQvFalE6jlfLxB/w58H5QbZFSbSnGJyaRLcEgJpfaFegRTmhZwNm9KtYB1P/tCjbI2s6PDIXPOc0t0cZOmqc/CpVgIC4pmcDGihIDKcYoaqhVlWw1ExRwG7OQYARq57En6OSp40n5PMg96WyuhPvqxk7U44fss40axeqE/eNt1brK87vMjbA8eQxf3JAs0Yb2PR44LD6hD+pvKc89z2evKFevURb3dTswbO1D48FAx9MtyxpheS/nX2r7Af1n9ee8yefm+yu0rZwfODU40Hm7prqIuPkxHhjRbA2YPshc1e9OjA1lT0wqVxe71deAccjK5q1D2XvldfNlKoV1cmK49oL07VV1zd/SEKQh3L78sLiNAROdiEkSgimCAL9MhSkyUOstF2Qy2SiXW5WJNrU9YeqXAT+6UOQ4L62u03MIILEyT8wS4AyuY55bbDLrgsxCmNgSWGeXUylpE2TJ8EgKVWixI8guyD8D3MPxxVJBEpCNC4IxZtwJm4GBXOSJIrcBQPjkjfjwjaEFP5pMrP7QhCIZR9HEibAIQFhF9X2BfmBknfbAAiEd7+vX0yKJNpv3GR8xodpBQLwaf6pDGxQT3Od/pFuBQSf4heVDbDDWAfB4hJ7+7RA0Zb4ksVEF6i21W0ZpKg8QAfMIDQdKIb8QTrBv4HpFf7AMona/WyXGA7DdB2GmqrqZis+vHjzhZBeXQEXX9PCxGIljVYSALMShpINSW1FWRQjxANvrsYMTZZTdHqzrsmfJ09tPfFQVXP2qZZSD2VYg6cqDKuqr6jEGpubPNXnEtUSNWCVsc45zzdSK6pa6ksM3jx48YKAQsMjc2EUFRmZCXdp+yplj0xmhaEJhHky6OrWiGFS1AUf6ZtBjdzWGQA=) format('woff2');unicode-range:U+5974}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAAMsAA0AAAAABeAAAALbAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYAA0EQgKgyCCZwE2AiQDCAsGAAQgBYQIByAMBxu9BFFULKoQPw9jY+lTIRR7e/XC8LiMtv3080N4lPgTD1/7/c7d3Y+IZxIhmjeSSSYFkmefTmQ6DUr3xpDf1doWLUUv4pJEvL3pvRgSyYHpxMQwqWt9tNcG7//jMoqFO1GdGCYRacEr+KQSIHhHXJZVtLEa4f9N3QR9jQKaVsiJzsX5si6fQ2mCbuoStEC2iR67IhQMNalbAkDJf3EuRDpLAGt7O/aU/aHGghsgzc4vbvkcel/NWtUJ8mfigIB4SgATAAkZPQJCiEETQIkGm73VUBZ/BYhxrLc3cCiBeKPwE9gPaXnjoYTzHzFrXHPkTyieb6S5RyehkeE3VSLr3W2GZSX9JfYoVlQ0KSSaU8vPqibHh/SHtqgYlSwWiUZmnOaynsezx7mSNzdtJhDj8X6uD0SjmnumBScnopFpYil2ym9KVM9SPDVlPinS0vnzqlpCqiYV++DK3zDDO5R4pBKbmhSc2fS0y2zQc5/a1fc9CAXJsq8p9iQBE2fTIIMaCNE3QN81WMsQ+lYgEkAtLSIImO7jvBZI+oZptsTVJMF9BgYhDLR8axitOI8iGIRL4PU7Qt/IBTU1vv95YaSWp2kUTSIIDUEFgQDpWbFfIcu2CPiWVECtEpgUhz33kSeBLePUGFXUlLwDVBJUY2lJkN9BFYjf41xkAQTCa+7tdbrfHvhP5vwJb5FiT8BH7JUKUK2l0i/qJRD8vVEkgOgAImWBFLckJpDcFD9PxoRxAgD1tgREacQ7CJEw4YskbX6RbNoPKaaijdQMhbi/zmS89WGaO4OAw7MgZUUlTT5xwGMgCwIbMiMgqJAlAob0gTaMQMSg2ojdEqqFhxlMMRmKliNqTG0F2XVBHkdIfstGyqNgigIOhnFkDBamspgK5GFsETYFmWJcatAvdhgcm4xgKMkrKqro6BkYuem04WBg6MhJ2WdJl0w6YRhMAgw/QlXX2gFGV20pC7/Ebc9FAAA=) format('woff2');unicode-range:U+5415}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAAMIAA0AAAAABZgAAAK3AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYAA0EQgKgliCLAE2AiQDCAsGAAQgBYQIByAMBxuCBACOwzgm3MRA5SbW4IHPy95PUonZMhUWduos4VmYhwvAQRnczlxoYZO3eICjAT2FQ070/TigWWDfq/RiIFk3sAIJnIPaJi43STwZalKXEAAAKPKX5mEB0gypPdBoHYuupPoLWIAga3hU0ZZ15GzT4qbFcoV5GsgvpX6AABCbpPZAMAAJkAF3MgJwpxAMFBQENB2z2Zn9pxEAljgPnDqcgwIIYDiYAgb4+2K4sXix+7hx68at9ljc5tK1hO2rfcbtW8WygkV33aO3Pay3adGS8E0HZywR4z2XjPeaaTez3ZNGS8c/8du712/tGs8dtjPydjz2WzpezLjp7u6xnOUPvZf5L3vovmib7Ywdvks2eI1fPN7Lb2+7jV5LN4rx7jcvRm4R47V27baemBn04YSqOTv/aXwk40uxXfUf048/Y/0z/jhnmE5oX8xH2kVlmNQf1V8yvDNQVEOpVhTrRlGt4saeYeyZjhhnTMaP6pxhZ1S/kdqJcOxVbaSRYW24Dco/o42M07V8k727amQcUTEx9qujBv0wtCMKphP51X+cqZ6kiZ3MP8IBQACCiw3Kuj7v5pTzzVqWXwJu+PVRAV4EPOvFPvMmubH0F6yQABDwg18osI+DcmMEkkpibYZ4AUgMJwAQSASyBHoDALCiIxmh2AA3EWNBsJtYwpG3WKbAb6yQXDa2wLeBb7EktkkU01UYrsoA/fRXI1iqZCkyBWutvz6CNTZArWANDdDDUMGa6EEXrHgPm6viA/XRq49VWMPW6E9XpdqKjq0alVeoli3JMZQn6mdA9l21ekrUi26IJP3odP0M1kdfuqFqVEsyeJpkIBJDcHoxL2ZSES310U+twXqokiJRsmQqTZESZTrS+uioqAwkWN13ydcsaquPKtUG0DFmaOreREaUzIdIlT0qzJP3KbMBAAA=) format('woff2');unicode-range:U+4E43}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAAMYAA0AAAAABdwAAALGAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYAA0EQgKgxyCTQE2AiQDCAsGAAQgBYQIByAMBxujBFGUDEYQ4IsDm8hwDy0MqZTZGGIYxfrUS36PjWZf5qN4DK/6mcRD/X6/s3sfoomE55+QUMxCMmuBeQnNPp0InQale6P5wtx2rORHTL3dDelQu0Zi8vv2a3eY2oQNmEUPjUcizpnWpX7RhIlkT0F8E6vxPxF25gfOybMNRwNK25An0sWFcXtbBvot6Zj09gbZZNdoEIVIf2pSRwkAVfmMQ06yTsCyLY5NUR9o4kJaoUzNNLdwWVk4q139PwDlJRkgIG4SMAyQKOhhF0J2GAaq8mBl4f8PbfoeAlqsO7EVQqqZVityBgBPzzX2eKdYPJW+NOzjk6d0gy9Juo2gSdyw9GDgy5fS9TwfX3xVzafLWhqXJCWlSUVU8KeKC7nqc4UQQYf6kFE3SS8jpqdTBM89ZY9tUg96Z0SjOpGiVMynLBequbkp4er9OYf6x8XS51TV6Je/mxbswuRm0WbSbDF/EykepIorORf9gPDxE9ib1PjDjovDDYiLAkzsbY3sCwPy88EC0LpBnKTR6iU/J39ssAbhgXPjJHYEWB5sJYWdTjyIg6yNnUZCWr2E7aD14AdJGxu91pOgOi/ZsAIEZVlyEhRmXz1W2/jR5WYHrdaAziDAAzK0Vn0JBGcj+gIQCA8NNvnais2/KeUFHvtGxwHPA69E1P8X8lHmQIsEwS92KwZGnlttdQUZ57QBglRnn54GubAPAC1W2UXVhifmaBj2RFO3D7SY8EIrI5FFm/QGv3uzRpzUKFRHOg6DZUJFhUWkSedYFCR9HAvokjEy1ABVoGrwmF7gUYg6WiWHbmIpdIbhrs96ssqQFTL2vhDE4KJXWXBBBIUkhLnXFDaLKDSFzGQIEbsJeAQkDGKbzdPpNaYoDIsIo4sICguLyamqa9rK1ZERERkTkF6/S2tOvSWKzgCkcPTQr/cGdo7pf0tU8V18vq0CAAAA) format('woff2');unicode-range:U+5948}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAAMcAA0AAAAABZQAAALKAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYAA0EQgKglSCIgE2AiQDCAsGAAQgBYQIByAMBxt4BFGUDEYO5C8H8po5PyoJQYGFys4szkY68WkryOEKyXuOEaKFRff+Jj7hnSQCeD3w7yWp4cmeAHLq1N3bF/Lz6+rN6hgFJcBtxL9gus2TT1KCmlI0OOQUjhxhiHHCrUb42AHc+wxTT/PuByLn7+5752brd2ZoXOfN3O7UTQ7wKaCJj5zoXPxAb21dU2mKZH8BBhI4BzGv6XFPKytE45YAIIl/CRtlIFod9QO69eswRI5/yIDSmSm0bd9xgNuej4xoPDFdSfw1GgsECEejfkBpgAgx8tMKAnRKU0ky0PNRmgJdag0DPcy6ufIRyZicDCxEFO+Xj6h40RIDF+W/9j7ks+iKz6KFbvjB0bFBt9/gcML6R59PLVpHr+yKW0xZVg8X8x4qbj8PGJ7G1mTbdqPmxccGnIhfil/zG31r/vZl1tXVRkJz96jq3elFJ58jFh35D235j835Db5V/lh4Z8h05E7mQc8ObNH5gOGFQN8bVZtzxxeSOXt6w4Wu3owbJ7mxveJl+p2ggwufOQ++XIlfHkz548qMOfWuADcaDSxoV2jG2FxQb8GNhl6NmjVKajQj/aTynH8yPxhZ7s0Rw7/kjmVBGml/k+v4o9seeCYzms3xCyAgeFrtOeYPzdX8N3H8Fd4UUz3AlxIbiUtvxlejz8gkAoFf+yJhnMb4qkBRFA6sm9gvmJN5hiBSkgGjACCTAbRCkgVviZigtBcmktNPJtbaL5OoHZoyGRQNE96SUdWwVDuIkYsZj8WxipIjS7YiUTpxaFEa8Wyi1OPhFFGa4JAoFR5oZcYCGnmKXpYBW3EQM4ueFOlWExpZlMg0HYYzsPi9pGwIGUiILBMLQVgSGgNRWFlkkmoJBYRkTJJ1yXU+0Y7GspHgzLJlyJIlV6lylar1Kz1FQUJiIr21fZVyxqZuNDMLHkKtoKtbQy0VS6Ou6M2Q+mKyDgAAAA==) format('woff2');unicode-range:U+4EC1}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAAQkAA0AAAAAB2gAAAPVAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYAA8EQgKhhyEeAE2AiQDCgsIAAQgBYQIByAMBxvYBVGULE4X4MeBc+YL6gxdQ8jMEUQIndOh55fnR/5EUK2RPbv3QCABIIyKwZMOG8MqKjLlAY1nl4qjq20hqVxFNEJlmC7azPcQK40YKYG3VH9Ulzk6S02BXeK0T+BKPsmV8gQj4YijBw8pZU300/uSArCvn3L+eVgKw/jaM+RLn/m/3PPbdO8AJ53iieyFw2ZFv+dzgYS4KCpcIFmWCATlxtDJSTBkKdk3hAQCzhf5V1xKSA/TU4Rd46c4QfUHSgyy3L02bt56xH303tF/Mfz/PvlreosQEM91HqQfJGQ0ywLNCgMoVQiJMoqw8vmtkcoKIMTTog7LKb0T0UqPQVjMPz7tfFFmU9GrbO7VJyZB+8QIQiWdnenmeJGrOOn2qtLegUQcgd5tsIDEjEAjmlXk+mXzT7pNJ5kcK3QqzSL3wbRiaslCa0px9x5Z20ik2yf+FLl9XS/+SLedM9rIyNUZsZzuoib1r55XzDTnJ7J+aiOaEFoSWStI7DaMNThdil2QWE4f37u957n1ifTEZkEnEMKasJyi7u7CrtOOkVhNb0czoF2x99LNLnO5fhS0byCBxHaaKSp2HraXi+3iDpE20uBYX8bGrD7FLHIV0z8znm6fmlSWx3dLnV3FuWNpP087U266vbfn73PBNU375Zi2UpHoLUiMurKs27mQQtcDnKOSdYp1yiFYNzCkEFIAGfEZi+uxzxl6GyH+YZssDj2Dt6VfpxuYhIx5Hjr0qZ8BGQuhBPhNXZUBb9/321TIqMcN+rFMhpKrTFJ8GHCMcCCjw0PGJFBViT3VwBELPGIcwsALrsc4oYYHIWZc5X7d4YMiox8zCcNDzjIILWflTJfMYD4HtbEMqUOo40YNwAdVEGKokwhm4ECG7HoVBB6u+ht72+jr2fcDdpiDIzzRhj0YZpRHuDzDY7z4JMYZJH425tK2lBcAs5yABDwkOeXDdSEuj+u0CebcXyeRJDTAknucEV0JEAiv3wbX1ZN1Tb9VOn+FT135NHzp+aWe/6dyY16PUCaB4K+ICo77fEAIeYpHJY0co7MXCgeDepXiHLtU5ghaFBX4zJoP/T7zSa2ffLbeny9MxBJfojOu3F5qKG7bBGCnSa1UWSBTJkxaoHNYJYferbbiO4GxAbJnzgNkE7Xf1GvkUp3OBqtFoQMms7sD+lIHsZlmPELXe6KL6t2dVUJUAEFPctGuA6VOrgAGi5nkWjZpg1SPm7Ifk+k7LLnSqhObKMZMmDBt2UYGU0TXMdDQ2CCUOc9l0juZJz+PrAZu5rCo76a0IPZ/2ZT+VxHdeQk/AQ==) format('woff2');unicode-range:U+5B87,U+5BF8}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAAVMAA0AAAAACXQAAAT7AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYABEEQgKihyIHgE2AiQDDAsKAAQgBYQIByAMBxuIB6OiZlFOUIB/Jth03hZyCGdkLDQvR1cMTctCU5eFN3g1vI27f6SOH+Lh+/1o5773VzRtEvEq2nZDMmlp04bm0QzINIg0hoo3hvz/fm6zFH7E1NtM30Q7q53rxMRxuiwt7Ug30lm6/dZT+7w0kRzJabUbDDDYNBoU8afhBgb7BcDACmBpBgab8jfbJ7RLy7InqkWdVsym1/e6DJQBlu9WnVmZTL/3N/mfa+pFWQLe+0wnkrEMkCi7YQZPaAQbzWbpBzhgnfh06laOZkYOZAyR7LApzMtF/hcnKkjH6TTMmj8aO0r+2LaFrXav5dXZC/tsf7s1ks3yF/lnugUTEFd1btIJQ0JGE1L4PGWyv1q1hKYvfJejslydLfYWB9y/PishcnIdPdvNfFtHfCVVs/sjqRSKisrpwfGauF3T6XcaEBXcRgPSvj5YNUBgIPLxqr+1hwDccXfTQZuAKwvZZ5so7HCqlIpzlAqL5lnIsMelNY8IRIRwLZtzzSzFGPvHS4Gq+KZwjao/vgMkukJvodeQggMqD0VzLMkUUuxStFRairQbn4qFDVUj8zCaDCCG4dej3ZNBc03SRHNgavroiKJihlV6Da9zGXG5Ux5weZcmzgRn0392DXA3UwdPLziumRpPnawY/4DA1OHGX6+sq3LKnlK8UQvCeDj05MzxvujeiftD68muuPt9ZAd3anFO4sfjseTWIcVAfUGlfFPp7ZBoUJZa8rKwV8t7JYq26dnnyBQQMAnjejNm+uhOSA2fqU/ocwKe9PRcstmXHc59UIqZDjHX5kj5qtGbuBT1+LNP614AFn4caOK4JhoGM447IaviUlgbTlYChZaX+5rUCsQgPJv9FOWEll7eX8RUtUlxuxafhdiHSc8G6hZSqXWaIcPYEZ8ZAHTegCuR371kZwY3bub2vaBs5qh0acTQ0kP/0QyORpvKbK2WOSExPS/N5CaqdZK2BWXJWzNwaNW61q7RebHBQJJGFxX75jkOhGK8bW1TGAcufT7GsfjR2TUogarLxvQq/O9TZQERetvXBjUpZMTjxa7iVDsU+8hVy8QsnRIFABaVGtmmhSXVxaneWLIpAZqKNWAZemtycyx4aGUoU52oJkZxdU6VaTRn7wCb/42QxmbOUc5zg/OETJoXUhqUTKBiJrKPUoU61ybvW9rj2ruMod5yW7tJc6C9ArOr5bb1MMWVU9lGrxSBeh8VYAyVo3XFuWQh6tpzqCqJo6OWkH60QAMg1LEWFzy7fWuDcpHcXF1DiYjBJ8OV5YFbMA8palMcY6edzlE4I8QGwDHTqNYog6SjOJBXYmwlDO5/skZcZIK3hjhk9ARQh4agd94ksCvnjYZIopXxt1YGOs+DrowM/gso3fgKyij0rMAgED7O6N/Xu53Z/5jzT/jU8moGxo+2/6xP6eb13AlTJYHgH5YuZDCeT8CZRopTiH99kQofVCKR074uHpFrVTaQoqjBZwCh0xeSRn8hW/SDwmS0oEJzKI+pNBxvK4ApYpOJJC6kpKCoAblEUT6+IfMgK79CM5DeAgBkzB/YLQWPrVMZ8lCRwF7LgSTqx10mR0ve4kE5R4Se/SoPI4cFdHkiAEQangAYXI48rZtQoa/TZ7lbstNPnPBEHg3NVpRTUFDWNjIx89KuY1GnyTVZzHgu496p3fDnoSgOdg/z+m6OZOTKA9OG38X/+L54DQAA) format('woff2');unicode-range:U+5DE6,U+5DDD,U+672B}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,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) format('woff2');unicode-range:U+8863,U+4E45,U+6CE2,U+6B66,U+6BDB,U+66FE}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAAVIAA0AAAAACXgAAAT2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYABEEQgKiiCICwE2AiQDDAsKAAQgBYQIByAMBxt1B6OiZlBOPIC/TODkClbHIQisExWhZ6hvvjFKELAMs2qosxVu7Vm4IahqLHtu7z+EKiyByBEoAHBRiQId4V7YAJUHNJ4VORrdhqwT6iuiUSL7OmLtglslJ2qGqHZ7FWPCGTcJpxJYYt9YjdD/zi3/I3mTPASC5JNcaWV+MoJLuN5cq7KNGIFAyHNiBGLFWoFAIKiy7EtbKrW6VjoTwPQOUheXoRZI20otPZCJ8UJD19RPqgD6XylPJLrwbBZROrGBvg9oFG3jCfF0UwmFXD1CnWpDjxUQOe77p/YF4E4DQ8e5UYvlB6SdwoQ7ldYJc+Z79/b9ZBu1wb77hUEA3TlnIguAAwaSGYFkXjEIF86BocfFzn9FB1Vo73pL+UyLaqJxPDvNQEGgBzl1Zr8LjCN5q1NT3P+f31gmmeas42lMO/LFnIfhuTGAYYXPsAFHIu7IEF1/un39nOSaAIYXwUB7H8/vH1bd2dTtFVU8mArYSkf7EW/6La8dGmYuSsI8ng9TobrptdubZ72yYGdhpM28kw3+EaSUIERAXB+GQGDQ6k+aDaR0PI0lK+3Ihh7Es7u3scibw0BEtYofL/ZxyWYS/MnKR/vj1xGX0sbt1fSwe0v9RCg1rc9SZawh063GNdGktOAYuL2JgxjKhogg1fuYK+XmZndTNU+VQhyFqY8I102EW0H78+P/sVECAQxDwSHYsn3BJBs183T5OtcsYunIB15T3x7T/mvdZPssuGYyDvQA0xBnGddHczAYsbqP854BaeOklzaWBYkm1xgrv8k51pOgKR+nw9eI56xU+It9y9P9QpFsxFEHdyDPq7N7zsxKin88v58IqnoxbKVFgZjs7uJ+vox8RNymBjBUBUGyHsRlXzDJwzCYmIiV5CVZD5vj/mvaLVyz6oJlsu+BZ4UyhtNqhTVt3ui4+PTOnvLuAuxNbzJaY9XFVUMIzoLm8fvM8mD7brubRz75dudNit8eDJjLwIJjIC2OkjN0EHoFOx28u7DzxI+JWe9i6GSH6J0THceMv5AizTzMmXwwtuSiHoSzR0FygLoQ80YYUXjnAfeIu3eRfBBtADlb2PtwrZqF7cVGtbfEozKDBdfbRCRVcALQLq5NmTGLm2USpdH6Ck0r+b2peLBrNiBRKWXRPGe6ePVpEgI3J+7dfHIrFbbQwFQwS10drkk457hM+XaiarTg9vYnFxojt7T9RsuI2RBmNMoyTBaxXLKtCzYGm4ptBFd+ccKjuBCynjQnN9a3UZOUMFeOvwBii5KpRwka0MNdDN6kB5hasoJICXUvYO3WKreDfkQZSyiO956kOxNvvI2yF0r3zi2tHrnjYerce3JeecDlzB2Drbx4IrTblZJB9cj/37SGARCQS1g83h4X6r+t2TPgIQkCnlLOIKOUZQ4I4wAIP6ySR/EyVewTUsUlBGiFSLzsfTBInTIEwQykwwwhrRERS4+IRrI8apxY7xrT7Nd4xanVBKRk6TJBudnRZjJ7rBqV2g4oVaxEtSyDX+GivlPjALSf08iIUBfAE97G9VpBq0DmpFscSNemHNgA2fNNajjb2IrQzZRmHtZqU08a0ybUTwa6eRPVK71CaTLaaaJ3xY2/pXegl3A90ekjfIXKoYesTIWKFStTp5UHyjlzHLTSzgUqxnyXQT3ZWPEepo1OTg+TujfKE2P/M5SqvdC7B14AAAA=) format('woff2');unicode-range:U+6B62,U+826F,U+793C}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,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) format('woff2');unicode-range:U+5DF1,U+4E16,U+592A,U+7559}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,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) format('woff2');unicode-range:U+6BD4,U+4FDD,U+5973,U+4E5F,U+7531,U+5229,U+8BA1}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,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) format('woff2');unicode-range:U+5B89,U+4EE5,U+52A0,U+4E4B,U+77E5,U+5929,U+4E0D,U+90E8,U+7F8E,U+4E0E,U+548C,U+65E0}
+@font-face{font-family:'KanaCao';src:url(data:font/woff2;base64,d09GMgABAAAAAAPcAA0AAAAABvwAAAONAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAoGYAA0EQgKhTyENgE2AiQDCAsGAAQgBYQIByAMBxuMBRFVnGKAn4exseyxjVTTsLbRJ4v0oyEvGVaSYTWdy95zBMUauvf/AQINLAySRxXhM3EECtBRa0QlutZ4dqQCl2uZVN7bYBk8oGIL5IiFzdrEbg5lERyqjgd6+vl5zSX/OByRALeJ7w8KoV9Md7bf24dJ/pYAR0zSKYMEVMQrVhRYVgPKOrrNBWiFPiCh7nxhj9//ncoHlBeBT6FDDgV8jNHpsdKiNZVO221ziVUECp/3zEePpG/W7K5JDAGzs/RPnJIckpOKBczun2LNgCfIsal81UbmE0veb64c5BS/HpF+Tzbh7sVbv23aQYIU1VKR05l2lDUEm8rrK7CDOxKgRN0qc1hOhjz8J0pYyPfyyurFWPlk4+F2z5vmDG0QhiJ9nAPwnida+5wzZAuZQRHWpv+rET95qDYqPu7e5ZiGMqrL94QHUcuJZxjrJOcYGnI/o7pc62mlzVdlAkbVeTsTYQoyKlMILbLjc3b+29weWBFeUjjjl+l8Up61gLf8KyhzU/VDw9Gmc5yT2/AHMyyurv4Vk1vp5Mdiftwn5DJW+HncfN58TEHmR6M7CoH9HRw8RxSndUfL+QCG9opmK1HL0582cWCbkfWeU6h6Dwg7L0Wa361Wbl9tqGcEcOcwm0uvKxtEqV9JJSA0MPCZDJVaPyNfzwLRimHO/ENGBcIzQc4fJ2XQcMb39h0Ts1Q1ABuUWbjinUiswdBXxMI3iERgzMadRa0yUZ7kAEhARCllR4m6S0wkZcFVXS9XVENpYMABuDY2OKdFG4S7PxsSyYpMxERitGQCV5T+E9GSiIDPYAXtKBqpQZJUhlb0Mw3iriXGOs8gVKTudNxZre7w1Qb3+lIGIXDFAgta8ZKjuIGFhsiaFa0suP78KQxkrkHrAoHw+eTq3etoSOWD8Hp/wJemMXQRfGv5pqm83ng/Jr+RJwHBv1zO6Lo404+CQhIXHSpZif2n5zk+0YrDOgKQZwktMj8XX3mG0O4HiVK/ITXkD5m+qIAcjTF9gVwdseuaAVgpYjNZEkhLQ9MAyr2K9Oo9WwrZ5hhZADkAQGb0WZQ5dKqPMtHgCQuIxBrvT05gsZG6ujxmNSa7u5xSVHZXAV+dCQCTR2cAgUSszpsm4KD5aCrTCZM+40pnSnlkkaaahoa2sam5pa+xjwgPz4jq6va7NGuInnSRmA2QZujVez1aYHt96mqpfBfO3g3sAw==) format('woff2');unicode-range:U+7962}
+:root{
+  --paper:#F6F3EE; --grid:#E4DED5; --ink:#4B4744; --muted:#7C7570; --white:#FCFAF6;
+  --coral:#D8B4AE; --yellow:#CFDBC8; --water:#B3C3CD; --green:#B7C4AE;
+  --rose-deep:#A8736D; --blue-deep:#647D8E;
+  --bd:2px solid var(--ink); --r:10px;
+  --jp:"LXGW WenKai TC","Klee One","Zen Kurenaido","BiauKai","DFKai-SB","Kaiti TC",cursive,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font-family:var(--jp);font-size:17px;line-height:1.55;
+  background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+b{font-weight:400}
+header{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:var(--bd)}
+.bar{max-width:1080px;margin:0 auto;padding:12px 16px 0;display:flex;align-items:flex-end;gap:10px 22px;flex-wrap:wrap}
+.brand{font-size:26px;letter-spacing:.04em;padding-bottom:10px}
+.brand span{margin-left:4px;padding:0 6px;background:linear-gradient(transparent 55%,var(--coral) 55%)}
+nav{display:flex;gap:6px;flex:1;min-width:280px;align-items:flex-end}
+nav button{flex:1;border:var(--bd);border-bottom:0;background:var(--white);border-radius:12px 12px 0 0;padding:4px 6px 5px;white-space:nowrap;color:var(--muted)}
+nav button[aria-selected=true]{color:var(--ink);padding:9px 6px 9px}
+nav button[data-tab=kana][aria-selected=true]{background:var(--coral)}
+nav button[data-tab=vocab][aria-selected=true]{background:var(--yellow)}
+nav button[data-tab=yt][aria-selected=true]{background:var(--water)}
+main{max-width:1080px;margin:0 auto;padding:24px 16px 80px}
+section[hidden]{display:none}
+h2{display:inline-block;font-size:21px;font-weight:400;margin:30px 0 12px;padding:0 8px;letter-spacing:.1em;background:linear-gradient(transparent 55%,var(--yellow) 55%)}
+h2:first-child{margin-top:4px}
+#tab-kana>h2{background:linear-gradient(transparent 55%,var(--coral) 55%)}
+.cols>div:first-child h2{background:linear-gradient(transparent 55%,var(--water) 55%)}
+.cols>div:last-child h2{background:linear-gradient(transparent 55%,var(--green) 55%)}
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.seg{display:inline-flex;border:var(--bd);border-radius:8px;overflow:hidden;background:var(--white)}
+.seg button{border:0;background:none;padding:5px 15px}
+.seg button+button{border-left:var(--bd)}
+.seg button.on{background:var(--yellow)}
+.chip{border:var(--bd);background:var(--white);border-radius:8px;padding:3px 12px;white-space:nowrap}
+.chip.on{background:var(--yellow)}
+.hint{font-size:15px;color:var(--muted)}
+.warn{background:var(--yellow);border:var(--bd);border-radius:var(--r);padding:8px 14px;margin-bottom:16px}
+
+/* 50 音 */
+.kgrid{display:grid;gap:10px}
+.kgrid.c5{grid-template-columns:repeat(5,1fr)}
+.kgrid.c3{grid-template-columns:repeat(3,1fr)}
+.k{background:var(--white);border:var(--bd);border-radius:var(--r);padding:6px 0;text-align:center;box-shadow:3px 3px 0 var(--grid);transition:transform .08s,background .15s}
+.k:active,.k.hit{transform:translate(2px,2px);box-shadow:none}
+.k.hit{background:var(--coral)}
+#k-daku .k.hit{background:var(--water)}
+#k-yo .k.hit{background:var(--green)}
+.k b{color:var(--blue-deep);display:block;font-size:clamp(28px,6.4vw,40px);line-height:1.2}
+.k small{display:block;font-size:15px;color:var(--muted)}
+.k i{display:block;font-style:normal;font-size:15px;color:var(--muted)}
+.k em{display:flex;justify-content:center;align-items:center;gap:3px;font-style:normal;font-size:16px;line-height:1;height:30px;margin-top:2px}
+.k em u{text-decoration:none;color:var(--muted);font-size:12px}
+.k em .cao{font-family:'KanaCao',cursive;font-size:27px;color:var(--rose-deep)}
+.k small span{color:var(--blue-deep);margin-left:2px}
+.k.blank{visibility:hidden}
+.cols{display:grid;gap:0 32px}
+@media(min-width:820px){.cols{grid-template-columns:1fr 1fr}}
+#stopBtn{position:fixed;right:18px;bottom:18px;z-index:20;border:var(--bd);background:var(--coral);border-radius:var(--r);padding:8px 18px;font-size:19px;box-shadow:3px 3px 0 var(--ink)}
+#stopBtn:active{transform:translate(3px,3px);box-shadow:none}
+#stopBtn[hidden]{display:none}
+
+/* 單字 */
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:14px;scrollbar-width:thin}
+@media(min-width:700px){.chips{flex-wrap:wrap;overflow:visible}}
+#q{flex:1;min-width:160px;border:0;border-bottom:var(--bd);background:transparent;border-radius:0;padding:6px 6px;outline:0}
+#q:focus{background:var(--yellow)}
+.urlrow input:focus,.manual textarea:focus{box-shadow:0 0 0 3px var(--yellow)}
+.words{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.w{background:var(--white);border:var(--bd);border-radius:var(--r);padding:12px 16px;box-shadow:3px 3px 0 var(--grid)}
+.w-top{display:flex;align-items:center;gap:12px}
+.w-word{font-size:30px;line-height:1.25}
+.w-kana{font-size:15px;color:var(--muted);min-height:22px}
+.w-zh{color:var(--muted)}
+.w-cat{margin-left:auto;font-size:14px;padding:0 6px;white-space:nowrap;align-self:flex-start;background:linear-gradient(transparent 45%,var(--green) 45%)}
+.w-ex{margin-top:10px;padding-top:10px;border-top:2px dashed var(--muted);display:flex;gap:10px;align-items:flex-start}
+.w-ex p{margin:0}
+.ex-ja{font-size:20px;line-height:2}
+.ex-zh{font-size:15px;color:var(--muted)}
+rt{font-size:.55em;color:var(--muted)}
+.play{flex:none;width:40px;height:40px;border-radius:50%;border:var(--bd);background:var(--coral);font-size:13px;display:grid;place-items:center;padding:0 0 0 2px;font-family:sans-serif}
+.play.sm{width:32px;height:32px;font-size:11px;background:var(--water);margin-top:5px}
+.play:active{background:var(--yellow)}
+
+/* YouTube */
+.urlrow{display:flex;gap:10px;margin-bottom:16px}
+.urlrow input{flex:1;min-width:0;border:var(--bd);background:var(--white);border-radius:var(--r);padding:8px 14px;outline:0}
+.btn{border:var(--bd);background:var(--coral);border-radius:var(--r);padding:6px 18px;white-space:nowrap;box-shadow:2px 2px 0 var(--ink)}
+.btn:active{transform:translate(2px,2px);box-shadow:none}
+.btn.ghost{background:var(--white);padding:4px 11px;box-shadow:none}
+.btn.ghost:active{transform:none;background:var(--yellow)}
+.btn.ghost.on{background:var(--yellow)}
+#showJa.on{background:var(--coral)}
+#showZh.on{background:var(--water)}
+#loop.on{background:var(--green)}
+.yt{display:grid;gap:18px}
+@media(min-width:900px){.yt{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:start}}
+.frame{position:relative;aspect-ratio:16/9;background:var(--white);border:var(--bd);border-radius:var(--r);overflow:hidden}
+.frame>*{position:absolute;inset:0;width:100%;height:100%}
+.frame .empty{display:grid;place-items:center;color:var(--muted);text-align:center;padding:20px}
+.frame .empty[hidden]{display:none}
+.sub{background:var(--white);border:var(--bd);border-radius:var(--r);margin-top:12px;padding:12px 18px;min-height:116px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;box-shadow:3px 3px 0 var(--grid)}
+.sub .ja{font-size:clamp(22px,3.6vw,30px);line-height:1.4}
+.sub .zh{font-size:clamp(17px,2.8vw,21px);line-height:1.4;padding:0 8px;background:linear-gradient(transparent 55%,var(--water) 55%)}
+.sub .zh:empty{display:none}
+.ctrl{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.ctrl .lbl{font-size:15px;color:var(--muted)}
+.ctrl .sp{flex:1}
+#rates{display:inline-flex;gap:6px;flex-wrap:wrap}
+#status{margin:12px 0 0;color:var(--muted)}
+#status.err{color:var(--ink);background:var(--coral);border:var(--bd);border-radius:var(--r);padding:6px 12px}
+#status:empty{display:none}
+.list{background:var(--white);border:var(--bd);border-radius:var(--r);max-height:66vh;overflow-y:auto}
+.list:empty::after{content:"字幕載入後會顯示在這裡，點任一句可跳到該處。";display:block;padding:20px;color:var(--muted)}
+.row{display:grid;grid-template-columns:46px 1fr;gap:8px;padding:8px 14px;border-bottom:1px solid var(--grid);cursor:pointer}
+.row:last-child{border-bottom:0}
+.row time{font-size:14px;color:var(--muted);padding-top:4px;font-variant-numeric:tabular-nums}
+.row .ja{font-size:19px}
+.row .zh{font-size:15px;color:var(--muted)}
+.row.on{background:var(--yellow)}
+.row.on .zh{color:var(--ink)}
+details{margin-top:18px;background:var(--white);border:var(--bd);border-radius:var(--r);padding:10px 16px}
+summary{cursor:pointer}
+.manual{display:grid;gap:12px;margin-top:10px}
+@media(min-width:640px){.manual{grid-template-columns:1fr 1fr}}
+.manual textarea{width:100%;height:120px;border:var(--bd);border-radius:8px;padding:8px;background:var(--paper);font-size:14px;font-family:ui-monospace,monospace;outline:0}
+.manual label{display:block;margin-bottom:4px}
+.manual input[type=file]{font-size:14px;margin-top:6px;max-width:100%}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">にほんご<span>練習帳</span></div>
+    <nav role="tablist">
+      <button role="tab" data-tab="kana" aria-selected="true">50 音</button>
+      <button role="tab" data-tab="vocab" aria-selected="false">N5 單字</button>
+      <button role="tab" data-tab="yt" aria-selected="false">YouTube 字幕</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="warn" id="voiceWarn" hidden>這台裝置找不到日文語音，發音可能無法播放。請在系統設定安裝日文語音，或改用 Chrome／Edge／Safari。</div>
+
+<!-- ============ 分頁 1：50 音 ============ -->
+<section id="tab-kana">
+  <div class="tools">
+    <div class="seg" id="kanaMode">
+      <button data-m="h" class="on">平假名</button>
+      <button data-m="k">片假名</button>
+      <button data-m="b">兩者</button>
+    </div>
+    <span class="hint">點任一個假名聽發音；清音下方是字源：漢字 → 草書 → 假名</span>
+  </div>
+  <h2>清音</h2><div class="kgrid c5" id="k-sei"></div>
+  <div class="cols">
+    <div><h2>濁音・半濁音</h2><div class="kgrid c5" id="k-daku"></div></div>
+    <div><h2>拗音</h2><div class="kgrid c3" id="k-yo"></div></div>
+  </div>
+</section>
+
+<!-- ============ 分頁 2：N5 單字 ============ -->
+<section id="tab-vocab" hidden>
+  <div class="tools">
+    <input id="q" type="search" placeholder="搜尋單字、假名或中文…">
+    <div class="seg" id="ttsRate">
+      <button data-r="0.7">慢速</button>
+      <button data-r="1" class="on">正常</button>
+    </div>
+    <span class="hint" id="count"></span>
+  </div>
+  <div class="chips" id="cats"></div>
+  <div class="words" id="words"></div>
+</section>
+
+<!-- ============ 分頁 3：YouTube ============ -->
+<section id="tab-yt" hidden>
+  <div class="urlrow">
+    <input id="url" type="url" inputmode="url" placeholder="貼上 YouTube 影片連結，例如 https://www.youtube.com/watch?v=…">
+    <button class="btn" id="load">載入</button>
+  </div>
+  <div class="yt">
+    <div>
+      <div class="frame"><div class="empty" id="playerEmpty">貼上連結後按「載入」</div><div id="player"></div></div>
+      <div class="sub"><div class="ja" id="subJa"></div><div class="zh" id="subZh"></div></div>
+      <div class="ctrl">
+        <span class="lbl">速度</span>
+        <span id="rates"></span>
+      </div>
+      <div class="ctrl">
+        <button class="btn ghost" id="prev" title="上一句">⏮ 上一句</button>
+        <button class="btn ghost" id="again" title="重聽這句">↻ 重聽</button>
+        <button class="btn ghost" id="next" title="下一句">下一句 ⏭</button>
+      </div>
+      <div class="ctrl">
+        <button class="btn ghost on" id="showJa">日文</button>
+        <button class="btn ghost on" id="showZh">中文</button>
+        <button class="btn ghost" id="loop">單句循環</button>
+        <span class="sp"></span>
+        <span class="lbl">字幕時間</span>
+        <button class="btn ghost" id="offM">−0.2s</button>
+        <span class="lbl" id="offV">0.0s</span>
+        <button class="btn ghost" id="offP">+0.2s</button>
+      </div>
+      <p id="status"></p>
+    </div>
+    <div class="list" id="list"></div>
+  </div>
+
+  <details id="manualBox">
+    <summary>自動抓不到字幕？手動貼上字幕（SRT／VTT）</summary>
+    <p class="hint">貼上文字或選擇檔案後按「套用字幕」。只有日文也可以，中文欄可留空。</p>
+    <div class="manual">
+      <div><label>日文字幕</label><textarea id="mJa" placeholder="1&#10;00:00:01,000 --> 00:00:03,500&#10;こんにちは"></textarea><input type="file" id="fJa" accept=".srt,.vtt,.txt"></div>
+      <div><label>中文字幕</label><textarea id="mZh" placeholder="1&#10;00:00:01,000 --> 00:00:03,500&#10;你好"></textarea><input type="file" id="fZh" accept=".srt,.vtt,.txt"></div>
+    </div>
+    <p><button class="btn" id="applyManual">套用字幕</button></p>
+  </details>
+</section>
+</main>
+<button id="stopBtn" hidden>■ 停止播放</button>
+
+<script>
+"use strict";
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+
+/* ---------- 分頁切換 ---------- */
+function showTab(name){
+  $$('nav button').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===name));
+  ['kana','vocab','yt'].forEach(t=>$('#tab-'+t).hidden=t!==name);
+  try{history.replaceState(null,'','#'+name)}catch(e){}
+  if('speechSynthesis' in window)speechSynthesis.cancel();
+}
+$$('nav button').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
+if(['kana','vocab','yt'].includes(location.hash.slice(1)))showTab(location.hash.slice(1));
+
+/* ---------- 日文語音 ---------- */
+let jaVoice=null, ttsRate=1;
+const hasTTS='speechSynthesis' in window;
+function pickVoice(){
+  const vs=speechSynthesis.getVoices();
+  jaVoice=vs.find(v=>/^ja/i.test(v.lang)&&/Google|Kyoko|O-ren|Nanami|Haruka|Siri/i.test(v.name))||vs.find(v=>/^ja/i.test(v.lang))||null;
+  $('#voiceWarn').hidden=!(vs.length&&!jaVoice);
+}
+if(hasTTS){pickVoice();speechSynthesis.onvoiceschanged=pickVoice}else $('#voiceWarn').hidden=false;
+function speak(text,rate){
+  if(!hasTTS)return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang='ja-JP'; if(jaVoice)u.voice=jaVoice; u.rate=rate||1;
+  speechSynthesis.speak(u);
+}
+
+function stopSpeak(){ if(hasTTS)speechSynthesis.cancel(); $('#stopBtn').hidden=true; }
+$('#stopBtn').onclick=stopSpeak;
+if(hasTTS)setInterval(()=>{$('#stopBtn').hidden=!(speechSynthesis.speaking||speechSynthesis.pending);},200);
+
+/* ---------- 分頁 1：50 音 ---------- */
+const KANA={
+  sei:["あ a","い i","う u","え e","お o","か ka","き ki","く ku","け ke","こ ko","さ sa","し shi","す su","せ se","そ so",
+       "た ta","ち chi","つ tsu","て te","と to","な na","に ni","ぬ nu","ね ne","の no","は ha","ひ hi","ふ fu","へ he","ほ ho",
+       "ま ma","み mi","む mu","め me","も mo","や ya","-","ゆ yu","-","よ yo","ら ra","り ri","る ru","れ re","ろ ro",
+       "わ wa","-","-","-","を o","ん n"],
+  daku:["が ga","ぎ gi","ぐ gu","げ ge","ご go","ざ za","じ ji","ず zu","ぜ ze","ぞ zo","だ da","ぢ ji","づ zu","で de","ど do",
+        "ば ba","び bi","ぶ bu","べ be","ぼ bo","ぱ pa","ぴ pi","ぷ pu","ぺ pe","ぽ po"],
+  yo:["きゃ kya","きゅ kyu","きょ kyo","しゃ sha","しゅ shu","しょ sho","ちゃ cha","ちゅ chu","ちょ cho","にゃ nya","にゅ nyu","にょ nyo",
+      "ひゃ hya","ひゅ hyu","ひょ hyo","みゃ mya","みゅ myu","みょ myo","りゃ rya","りゅ ryu","りょ ryo","ぎゃ gya","ぎゅ gyu","ぎょ gyo",
+      "じゃ ja","じゅ ju","じょ jo","びゃ bya","びゅ byu","びょ byo","ぴゃ pya","ぴゅ pyu","ぴょ pyo"]
+};
+// 字源：平假名來自漢字草書，片假名取自漢字的一部分
+const ORIGIN_H="あ安い以う宇え衣お於か加き幾く久け計こ己さ左し之す寸せ世そ曽た太ち知つ川て天と止な奈に仁ぬ奴ね祢の乃は波ひ比ふ不へ部ほ保ま末み美む武め女も毛や也ゆ由よ与ら良り利る留れ礼ろ呂わ和を遠ん无";
+const ORIGIN_K="あ阿い伊う宇え江お於か加き幾く久け介こ己さ散し之す須せ世そ曽た多ち千つ川て天と止な奈に仁ぬ奴ね祢の乃は八ひ比ふ不へ部ほ保ま末み三む牟め女も毛や也ゆ由よ與ら良り利る流れ礼ろ呂わ和を乎ん尓";
+const CAO_MAP={'計':'计','曽':'曾','呂':'吕'}, CAO_SKIP='幾遠';   // 草書字型缺字時的替代／略過
+const originOf=(str,h)=>{const i=str.indexOf(h); return i<0||i%2?'':str[i+1];};
+const toKata=s=>s.replace(/[ぁ-ゖ]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60));
+let kanaMode='h';
+function renderKana(){
+  for(const g of ['sei','daku','yo']){
+    $('#k-'+g).innerHTML=KANA[g].map(x=>{
+      if(x==='-')return '<div class="k blank"></div>';
+      const [h,r]=x.split(' '), k=toKata(h);
+      const main=kanaMode==='k'?k:h;
+      let sub=kanaMode==='b'?`<small>${k}</small>`:'', org='';
+      if(g==='sei'){
+        const oh=originOf(ORIGIN_H,h), ok=originOf(ORIGIN_K,h);
+        // 平假名：漢字 → 草書；片假名取自漢字的一部分，沒有草書階段
+        const c=CAO_SKIP.includes(oh)?'':(CAO_MAP[oh]||oh);
+        const chain=`<em title="字源">${oh}${c?`<u>→</u><span class="cao">${c}</span>`:''}</em>`;
+        if(kanaMode==='h')org=chain;
+        else if(kanaMode==='k')org=`<em title="字源">${ok}</em>`;
+        else{sub=`<small>${k}<span>←${ok}</span></small>`;org=chain;}
+      }
+      return `<button class="k" data-say="${h}"><b>${main}</b>${sub}<i>${r}</i>${org}</button>`;
+    }).join('');
+  }
+}
+$('#kanaMode').onclick=e=>{
+  const b=e.target.closest('button'); if(!b)return;
+  kanaMode=b.dataset.m; $$('#kanaMode button').forEach(x=>x.classList.toggle('on',x===b)); renderKana();
+};
+$('#tab-kana').addEventListener('click',e=>{
+  const b=e.target.closest('.k[data-say]'); if(!b)return;
+  speak(b.dataset.say,0.8);
+  b.classList.add('hit'); setTimeout(()=>b.classList.remove('hit'),450);
+});
+renderKana();
+
+/* ---------- 分頁 2：N5 單字 ----------
+   格式：[單字, 假名(純假名單字留空), 中文, 例句(漢字[讀音]), 例句中文] */
+const VOCAB={
+"問候・常用語":[
+["おはようございます","","早安","先生[せんせい]、おはようございます。","老師，早安。"],
+["こんにちは","","你好（白天）","こんにちは、田中[たなか]さん。","田中先生，你好。"],
+["こんばんは","","晚上好","こんばんは、いい夜[よる]ですね。","晚上好，今晚真不錯呢。"],
+["ありがとう","","謝謝","手伝[てつだ]ってくれて、ありがとう。","謝謝你幫我。"],
+["すみません","","不好意思／對不起","すみません、駅[えき]はどこですか。","不好意思，請問車站在哪裡？"],
+["おやすみなさい","","晚安（睡前）","もう寝[ね]ます。おやすみなさい。","我要睡了，晚安。"],
+["いただきます","","我開動了","いただきます。おいしそうですね。","我開動了。看起來好好吃。"],
+["ごちそうさま","","我吃飽了／謝謝招待","ごちそうさま。とてもおいしかったです。","我吃飽了，非常好吃。"],
+["お願いします","おねがいします","麻煩你／拜託","コーヒーを一[ひと]つお願[ねが]いします。","請給我一杯咖啡。"],
+["大丈夫","だいじょうぶ","沒問題／沒關係","大丈夫[だいじょうぶ]ですか。","你還好嗎？"],
+["はじめまして","","初次見面","はじめまして、李[り]です。","初次見面，我姓李。"],
+["さようなら","","再見","先生[せんせい]、さようなら。","老師再見。"]],
+"數字・時間":[
+["一つ","ひとつ","一個","りんごを一[ひと]つください。","請給我一個蘋果。"],
+["今日","きょう","今天","今日[きょう]は日曜日[にちようび]です。","今天是星期日。"],
+["明日","あした","明天","明日[あした]、学校[がっこう]へ行[い]きます。","明天要去學校。"],
+["昨日","きのう","昨天","昨日[きのう]、映画[えいが]を見[み]ました。","昨天看了電影。"],
+["今","いま","現在","今[いま]、何時[なんじ]ですか。","現在幾點？"],
+["毎日","まいにち","每天","毎日[まいにち]日本語[にほんご]を勉強[べんきょう]します。","每天學日文。"],
+["朝","あさ","早上","朝[あさ]六時[ろくじ]に起[お]きます。","早上六點起床。"],
+["夜","よる","晚上","夜[よる]は家[いえ]でテレビを見[み]ます。","晚上在家看電視。"],
+["午後","ごご","下午","午後[ごご]三時[さんじ]に会[あ]いましょう。","下午三點見吧。"],
+["時間","じかん","時間","今日[きょう]は時間[じかん]がありません。","今天沒有時間。"],
+["一週間","いっしゅうかん","一星期","一週間[いっしゅうかん]に二回[にかい]泳[およ]ぎます。","一星期游泳兩次。"],
+["来年","らいねん","明年","来年[らいねん]、日本[にほん]へ行[い]きたいです。","明年想去日本。"]],
+"家人・人":[
+["私","わたし","我","私[わたし]は台湾人[たいわんじん]です。","我是台灣人。"],
+["家族","かぞく","家人","家族[かぞく]は四人[よにん]です。","我家有四個人。"],
+["父","ちち","（自己的）爸爸","父[ちち]は会社員[かいしゃいん]です。","我爸爸是上班族。"],
+["母","はは","（自己的）媽媽","母[はは]は料理[りょうり]が上手[じょうず]です。","我媽媽很會做菜。"],
+["兄","あに","哥哥","兄[あに]は東京[とうきょう]に住[す]んでいます。","哥哥住在東京。"],
+["姉","あね","姊姊","姉[あね]は先生[せんせい]です。","姊姊是老師。"],
+["弟","おとうと","弟弟","弟[おとうと]はサッカーが好[す]きです。","弟弟喜歡足球。"],
+["妹","いもうと","妹妹","妹[いもうと]は七歳[ななさい]です。","妹妹七歲。"],
+["子供","こども","小孩","公園[こうえん]に子供[こども]がたくさんいます。","公園裡有很多小孩。"],
+["友達","ともだち","朋友","友達[ともだち]と映画[えいが]を見[み]に行[い]きます。","和朋友去看電影。"],
+["先生","せんせい","老師","先生[せんせい]に質問[しつもん]します。","向老師發問。"],
+["学生","がくせい","學生","私[わたし]は大学[だいがく]の学生[がくせい]です。","我是大學生。"]],
+"食物・飲料":[
+["ご飯","ごはん","飯／餐","朝[あさ]ご飯[はん]を食[た]べましたか。","吃早餐了嗎？"],
+["パン","","麵包","毎朝[まいあさ]パンを食[た]べます。","每天早上吃麵包。"],
+["肉","にく","肉","肉[にく]と野菜[やさい]を買[か]いました。","買了肉和蔬菜。"],
+["魚","さかな","魚","魚[さかな]が好[す]きですか。","你喜歡魚嗎？"],
+["卵","たまご","蛋","卵[たまご]を二[ふた]つ使[つか]います。","用兩顆蛋。"],
+["水","みず","水","水[みず]を一杯[いっぱい]ください。","請給我一杯水。"],
+["お茶","おちゃ","茶","お茶[ちゃ]を飲[の]みませんか。","要不要喝茶？"],
+["牛乳","ぎゅうにゅう","牛奶","毎朝[まいあさ]牛乳[ぎゅうにゅう]を飲[の]みます。","每天早上喝牛奶。"],
+["コーヒー","","咖啡","コーヒーに砂糖[さとう]を入[い]れますか。","咖啡要加糖嗎？"],
+["お菓子","おかし","零食／點心","子供[こども]はお菓子[かし]が大好[だいす]きです。","小孩最喜歡零食。"],
+["弁当","べんとう","便當","母[はは]が弁当[べんとう]を作[つく]りました。","媽媽做了便當。"],
+["料理","りょうり","料理／菜","日本[にほん]の料理[りょうり]はおいしいです。","日本菜很好吃。"]],
+"水果・蔬菜":[
+["果物","くだもの","水果","果物[くだもの]の中[なか]で何[なに]が一番[いちばん]好[す]きですか。","水果裡你最喜歡什麼？"],
+["りんご","","蘋果","このりんごは赤[あか]くて甘[あま]いです。","這顆蘋果又紅又甜。"],
+["みかん","","橘子","冬[ふゆ]はよくみかんを食[た]べます。","冬天常吃橘子。"],
+["バナナ","","香蕉","バナナを一本[いっぽん]食[た]べました。","吃了一根香蕉。"],
+["いちご","","草莓","いちごのケーキを買[か]いました。","買了草莓蛋糕。"],
+["ぶどう","","葡萄","このぶどうはいくらですか。","這葡萄多少錢？"],
+["すいか","","西瓜","夏[なつ]はすいかがおいしいです。","夏天的西瓜很好吃。"],
+["野菜","やさい","蔬菜","毎日[まいにち]野菜[やさい]を食[た]べましょう。","每天吃蔬菜吧。"],
+["トマト","","番茄","トマトを三[みっ]つ買[か]います。","買三顆番茄。"],
+["たまねぎ","","洋蔥","たまねぎを切[き]ります。","切洋蔥。"],
+["じゃがいも","","馬鈴薯","じゃがいもでカレーを作[つく]ります。","用馬鈴薯做咖哩。"],
+["にんじん","","紅蘿蔔","弟[おとうと]はにんじんが嫌[きら]いです。","弟弟討厭紅蘿蔔。"]],
+"廚房・餐具":[
+["台所","だいどころ","廚房","母[はは]は台所[だいどころ]にいます。","媽媽在廚房。"],
+["冷蔵庫","れいぞうこ","冰箱","冷蔵庫[れいぞうこ]に牛乳[ぎゅうにゅう]があります。","冰箱裡有牛奶。"],
+["皿","さら","盤子","皿[さら]を洗[あら]ってください。","請洗盤子。"],
+["茶碗","ちゃわん","飯碗","茶碗[ちゃわん]にご飯[はん]を入[い]れます。","把飯盛進碗裡。"],
+["コップ","","杯子","コップに水[みず]を入[い]れます。","把水倒進杯子。"],
+["箸","はし","筷子","箸[はし]でご飯[はん]を食[た]べます。","用筷子吃飯。"],
+["スプーン","","湯匙","スプーンでスープを飲[の]みます。","用湯匙喝湯。"],
+["フォーク","","叉子","フォークとナイフを使[つか]います。","使用叉子和刀子。"],
+["ナイフ","","刀子","ナイフで肉[にく]を切[き]ります。","用刀子切肉。"],
+["塩","しお","鹽","塩[しお]を少[すこ]し入[い]れてください。","請加一點鹽。"],
+["砂糖","さとう","糖","砂糖[さとう]は入[い]れません。","不加糖。"],
+["しょうゆ","","醬油","しょうゆを取[と]ってください。","請幫我拿醬油。"]],
+"家・生活用品":[
+["家","いえ","家／房子","私[わたし]の家[いえ]は駅[えき]の近[ちか]くです。","我家在車站附近。"],
+["部屋","へや","房間","部屋[へや]を掃除[そうじ]します。","打掃房間。"],
+["窓","まど","窗戶","窓[まど]を開[あ]けてください。","請打開窗戶。"],
+["ドア","","門","ドアを閉[し]めてください。","請關門。"],
+["机","つくえ","桌子","机[つくえ]の上[うえ]に本[ほん]があります。","桌上有書。"],
+["椅子","いす","椅子","この椅子[いす]に座[すわ]ってください。","請坐這張椅子。"],
+["電気","でんき","電燈／電","電気[でんき]を消[け]してください。","請關燈。"],
+["時計","とけい","時鐘／手錶","この時計[とけい]は高[たか]いです。","這支錶很貴。"],
+["鍵","かぎ","鑰匙","鍵[かぎ]をなくしました。","鑰匙弄丟了。"],
+["傘","かさ","雨傘","傘[かさ]を持[も]って行[い]きます。","帶傘去。"],
+["電話","でんわ","電話","友達[ともだち]に電話[でんわ]をかけます。","打電話給朋友。"],
+["お風呂","おふろ","浴室／泡澡","毎晩[まいばん]お風呂[ふろ]に入[はい]ります。","每天晚上泡澡。"],
+["トイレ","","廁所","トイレはどこですか。","廁所在哪裡？"]],
+"公園・自然":[
+["公園","こうえん","公園","公園[こうえん]で散歩[さんぽ]します。","在公園散步。"],
+["木","き","樹","公園[こうえん]に大[おお]きい木[き]があります。","公園裡有大樹。"],
+["花","はな","花","きれいな花[はな]が咲[さ]いています。","漂亮的花開著。"],
+["池","いけ","池塘","池[いけ]に魚[さかな]がいます。","池塘裡有魚。"],
+["川","かわ","河","川[かわ]で泳[およ]ぎます。","在河裡游泳。"],
+["山","やま","山","日曜日[にちようび]に山[やま]に登[のぼ]ります。","星期日去爬山。"],
+["海","うみ","海","夏休[なつやす]みに海[うみ]へ行[い]きます。","暑假去海邊。"],
+["空","そら","天空","空[そら]が青[あお]いです。","天空很藍。"],
+["犬","いぬ","狗","犬[いぬ]と公園[こうえん]を歩[ある]きます。","和狗在公園走路。"],
+["猫","ねこ","貓","猫[ねこ]が椅子[いす]の下[した]にいます。","貓在椅子下面。"],
+["鳥","とり","鳥","鳥[とり]が空[そら]を飛[と]んでいます。","鳥在天上飛。"],
+["散歩","さんぽ","散步","毎朝[まいあさ]犬[いぬ]と散歩[さんぽ]します。","每天早上和狗散步。"]],
+"交通・場所":[
+["駅","えき","車站","駅[えき]まで歩[ある]いて十分[じゅっぷん]です。","走到車站要十分鐘。"],
+["電車","でんしゃ","電車","電車[でんしゃ]で会社[かいしゃ]へ行[い]きます。","搭電車去公司。"],
+["バス","","公車","バスに乗[の]ります。","搭公車。"],
+["車","くるま","車子","父[ちち]の車[くるま]は新[あたら]しいです。","爸爸的車是新的。"],
+["自転車","じてんしゃ","腳踏車","自転車[じてんしゃ]で学校[がっこう]へ行[い]きます。","騎腳踏車去學校。"],
+["飛行機","ひこうき","飛機","飛行機[ひこうき]で日本[にほん]へ行[い]きます。","搭飛機去日本。"],
+["道","みち","路","この道[みち]をまっすぐ行[い]ってください。","請沿這條路直走。"],
+["店","みせ","商店","あの店[みせ]は安[やす]いです。","那家店很便宜。"],
+["病院","びょういん","醫院","病院[びょういん]は銀行[ぎんこう]の隣[となり]です。","醫院在銀行隔壁。"],
+["銀行","ぎんこう","銀行","銀行[ぎんこう]は九時[くじ]に開[あ]きます。","銀行九點開門。"],
+["郵便局","ゆうびんきょく","郵局","郵便局[ゆうびんきょく]で切手[きって]を買[か]います。","在郵局買郵票。"],
+["ホテル","","飯店","駅[えき]の前[まえ]のホテルに泊[と]まります。","住在車站前的飯店。"]],
+"學校・工作":[
+["学校","がっこう","學校","学校[がっこう]は八時[はちじ]に始[はじ]まります。","學校八點開始。"],
+["教室","きょうしつ","教室","教室[きょうしつ]に学生[がくせい]が十人[じゅうにん]います。","教室裡有十個學生。"],
+["本","ほん","書","図書館[としょかん]で本[ほん]を借[か]ります。","在圖書館借書。"],
+["辞書","じしょ","字典","辞書[じしょ]を貸[か]してください。","請借我字典。"],
+["鉛筆","えんぴつ","鉛筆","鉛筆[えんぴつ]で書[か]いてください。","請用鉛筆寫。"],
+["宿題","しゅくだい","作業","宿題[しゅくだい]はもう終[お]わりました。","作業已經寫完了。"],
+["テスト","","考試","明日[あした]テストがあります。","明天有考試。"],
+["会社","かいしゃ","公司","会社[かいしゃ]は五時[ごじ]に終[お]わります。","公司五點下班。"],
+["仕事","しごと","工作","仕事[しごと]は忙[いそが]しいですか。","工作忙嗎？"],
+["休み","やすみ","休息／放假","明日[あした]は休[やす]みです。","明天放假。"],
+["日本語","にほんご","日文","日本語[にほんご]は面白[おもしろ]いです。","日文很有趣。"],
+["質問","しつもん","問題／提問","質問[しつもん]がありますか。","有問題嗎？"]],
+"身體・衣物":[
+["頭","あたま","頭","頭[あたま]が痛[いた]いです。","頭痛。"],
+["目","め","眼睛","彼女[かのじょ]は目[め]が大[おお]きいです。","她的眼睛很大。"],
+["耳","みみ","耳朵","うさぎは耳[みみ]が長[なが]いです。","兔子的耳朵很長。"],
+["口","くち","嘴巴","口[くち]を大[おお]きく開[あ]けてください。","請把嘴巴張大。"],
+["手","て","手","ご飯[はん]の前[まえ]に手[て]を洗[あら]います。","吃飯前洗手。"],
+["足","あし","腳","足[あし]が疲[つか]れました。","腳很累。"],
+["お腹","おなか","肚子","お腹[なか]がすきました。","肚子餓了。"],
+["服","ふく","衣服","新[あたら]しい服[ふく]を買[か]いたいです。","想買新衣服。"],
+["靴","くつ","鞋子","ここで靴[くつ]を脱[ぬ]いでください。","請在這裡脫鞋。"],
+["帽子","ぼうし","帽子","帽子[ぼうし]をかぶります。","戴帽子。"],
+["眼鏡","めがね","眼鏡","眼鏡[めがね]をかけています。","戴著眼鏡。"],
+["かばん","","包包","かばんの中[なか]に何[なに]がありますか。","包包裡有什麼？"]],
+"常用動詞":[
+["食べる","たべる","吃","昼[ひる]ご飯[はん]を食[た]べます。","吃午餐。"],
+["飲む","のむ","喝","水[みず]を飲[の]みます。","喝水。"],
+["行く","いく","去","来週[らいしゅう]京都[きょうと]へ行[い]きます。","下星期去京都。"],
+["来る","くる","來","友達[ともだち]が家[いえ]に来[き]ます。","朋友要來我家。"],
+["見る","みる","看","毎晩[まいばん]テレビを見[み]ます。","每天晚上看電視。"],
+["聞く","きく","聽／問","音楽[おんがく]を聞[き]きます。","聽音樂。"],
+["読む","よむ","讀","新聞[しんぶん]を読[よ]みます。","看報紙。"],
+["書く","かく","寫","手紙[てがみ]を書[か]きます。","寫信。"],
+["話す","はなす","說","日本語[にほんご]で話[はな]してください。","請用日文說。"],
+["買う","かう","買","スーパーで野菜[やさい]を買[か]います。","在超市買蔬菜。"],
+["起きる","おきる","起床","毎朝[まいあさ]七時[しちじ]に起[お]きます。","每天早上七點起床。"],
+["寝る","ねる","睡覺","十一時[じゅういちじ]に寝[ね]ます。","十一點睡覺。"],
+["勉強する","べんきょうする","學習／讀書","図書館[としょかん]で勉強[べんきょう]します。","在圖書館讀書。"],
+["分かる","わかる","懂／明白","この言葉[ことば]の意味[いみ]が分[わ]かりません。","不懂這個詞的意思。"]],
+"常用形容詞":[
+["大きい","おおきい","大的","あの建物[たてもの]は大[おお]きいです。","那棟建築物很大。"],
+["小さい","ちいさい","小的","この靴[くつ]は少[すこ]し小[ちい]さいです。","這雙鞋有點小。"],
+["新しい","あたらしい","新的","新[あたら]しい携帯[けいたい]を買[か]いました。","買了新手機。"],
+["古い","ふるい","舊的／古老的","このお寺[てら]はとても古[ふる]いです。","這座寺廟非常古老。"],
+["高い","たかい","貴的／高的","このかばんは高[たか]いです。","這個包包很貴。"],
+["安い","やすい","便宜的","この店[みせ]は安[やす]くておいしいです。","這家店便宜又好吃。"],
+["おいしい","","好吃的","このラーメンはおいしいです。","這碗拉麵很好吃。"],
+["忙しい","いそがしい","忙碌的","今週[こんしゅう]はとても忙[いそが]しいです。","這星期非常忙。"],
+["楽しい","たのしい","開心的","旅行[りょこう]は楽[たの]しかったです。","旅行很開心。"],
+["難しい","むずかしい","困難的","漢字[かんじ]は難[むずか]しいです。","漢字很難。"],
+["きれい","","漂亮／乾淨","この町[まち]はきれいです。","這個城鎮很漂亮。"],
+["好き","すき","喜歡","私[わたし]は猫[ねこ]が好[す]きです。","我喜歡貓。"],
+["元気","げんき","有精神／健康","お元気[げんき]ですか。","你好嗎？"],
+["静か","しずか","安靜","図書館[としょかん]は静[しず]かです。","圖書館很安靜。"]],
+"天氣・季節":[
+["天気","てんき","天氣","今日[きょう]はいい天気[てんき]ですね。","今天天氣真好。"],
+["雨","あめ","雨","明日[あした]は雨[あめ]が降[ふ]ります。","明天會下雨。"],
+["雪","ゆき","雪","北海道[ほっかいどう]は雪[ゆき]が多[おお]いです。","北海道雪很多。"],
+["風","かぜ","風","今日[きょう]は風[かぜ]が強[つよ]いです。","今天風很大。"],
+["晴れ","はれ","晴天","週末[しゅうまつ]は晴[は]れでしょう。","週末應該是晴天。"],
+["曇り","くもり","陰天","今日[きょう]は一日[いちにち]曇[くも]りです。","今天一整天陰天。"],
+["暑い","あつい","熱的","台湾[たいわん]の夏[なつ]は暑[あつ]いです。","台灣的夏天很熱。"],
+["寒い","さむい","冷的","今朝[けさ]はとても寒[さむ]いです。","今天早上非常冷。"],
+["春","はる","春天","春[はる]に桜[さくら]が咲[さ]きます。","春天櫻花會開。"],
+["夏","なつ","夏天","夏[なつ]は海[うみ]で泳[およ]ぎます。","夏天在海邊游泳。"],
+["秋","あき","秋天","秋[あき]は涼[すず]しいです。","秋天很涼爽。"],
+["冬","ふゆ","冬天","冬[ふゆ]にスキーをします。","冬天去滑雪。"]]
+};
+const VOCAB_ADD={"數字・數量":[["一","いち","一","一[いち]から十[じゅう]まで数[かぞ]えます。","從一數到十。"],
+["二","に","二","二階[にかい]に部屋[へや]があります。","房間在二樓。"],
+["三","さん","三","三月[さんがつ]に卒業[そつぎょう]します。","三月畢業。"],
+["四","よん","四","四番[よんばん]のバスに乗[の]ります。","搭四號公車。"],
+["五","ご","五","五分[ごふん]待[ま]ってください。","請等五分鐘。"],
+["六","ろく","六","六月[ろくがつ]は雨[あめ]が多[おお]いです。","六月雨很多。"],
+["七","なな","七","七階[ななかい]で降[お]ります。","在七樓下。"],
+["八","はち","八","八時[はちじ]に家[いえ]を出[で]ます。","八點出門。"],
+["九","きゅう","九","九階[きゅうかい]に住[す]んでいます。","住在九樓。"],
+["十","じゅう","十","十円[じゅうえん]を貸[か]してください。","請借我十日圓。"],
+["百","ひゃく","百","百円[ひゃくえん]のお菓子[かし]を買[か]います。","買一百日圓的零食。"],
+["千","せん","千","このシャツは千円[せんえん]です。","這件襯衫一千日圓。"],
+["万","まん","萬","一万円[いちまんえん]を払[はら]いました。","付了一萬日圓。"],
+["円","えん","日圓","これは五百円[ごひゃくえん]です。","這個五百日圓。"],
+["一人","ひとり","一個人","一人[ひとり]で旅行[りょこう]します。","一個人旅行。"],
+["二人","ふたり","兩個人","二人[ふたり]で映画[えいが]を見[み]ます。","兩個人看電影。"],
+["半分","はんぶん","一半","ケーキを半分[はんぶん]食[た]べました。","吃了一半的蛋糕。"],
+["全部","ぜんぶ","全部","全部[ぜんぶ]でいくらですか。","全部多少錢？"],
+["二十歳","はたち","二十歲","来月[らいげつ]二十歳[はたち]になります。","下個月滿二十歲。"],
+["番号","ばんごう","號碼","電話[でんわ]番号[ばんごう]を教[おし]えてください。","請告訴我電話號碼。"]],"星期・日期":[["月曜日","げつようび","星期一","月曜日[げつようび]から金曜日[きんようび]まで働[はたら]きます。","星期一到星期五工作。"],
+["火曜日","かようび","星期二","火曜日[かようび]に日本語[にほんご]の授業[じゅぎょう]があります。","星期二有日文課。"],
+["水曜日","すいようび","星期三","水曜日[すいようび]は早[はや]く帰[かえ]ります。","星期三早點回家。"],
+["木曜日","もくようび","星期四","木曜日[もくようび]に会議[かいぎ]があります。","星期四有會議。"],
+["金曜日","きんようび","星期五","金曜日[きんようび]の夜[よる]、飲[の]みに行[い]きます。","星期五晚上去喝一杯。"],
+["土曜日","どようび","星期六","土曜日[どようび]は洗濯[せんたく]をします。","星期六洗衣服。"],
+["日曜日","にちようび","星期日","日曜日[にちようび]は家[いえ]で休[やす]みます。","星期日在家休息。"],
+["今週","こんしゅう","這星期","今週[こんしゅう]は暇[ひま]です。","這星期有空。"],
+["来週","らいしゅう","下星期","来週[らいしゅう]、試験[しけん]があります。","下星期有考試。"],
+["先週","せんしゅう","上星期","先週[せんしゅう]、大阪[おおさか]へ行[い]きました。","上星期去了大阪。"],
+["今月","こんげつ","這個月","今月[こんげつ]は忙[いそが]しいです。","這個月很忙。"],
+["来月","らいげつ","下個月","来月[らいげつ]、国[くに]へ帰[かえ]ります。","下個月回國。"],
+["先月","せんげつ","上個月","先月[せんげつ]、車[くるま]を買[か]いました。","上個月買了車。"],
+["今年","ことし","今年","今年[ことし]の夏[なつ]は暑[あつ]いです。","今年夏天很熱。"],
+["去年","きょねん","去年","去年[きょねん]、日本[にほん]へ来[き]ました。","去年來到日本。"],
+["毎朝","まいあさ","每天早上","毎朝[まいあさ]コーヒーを飲[の]みます。","每天早上喝咖啡。"],
+["毎晩","まいばん","每天晚上","毎晩[まいばん]日記[にっき]を書[か]きます。","每天晚上寫日記。"],
+["午前","ごぜん","上午","午前[ごぜん]九時[くじ]に始[はじ]まります。","上午九點開始。"],
+["昼","ひる","中午／白天","昼[ひる]は食堂[しょくどう]で食[た]べます。","中午在食堂吃。"],
+["夕方","ゆうがた","傍晚","夕方[ゆうがた]、雨[あめ]が降[ふ]りました。","傍晚下了雨。"],
+["今晩","こんばん","今晚","今晩[こんばん]、何[なに]を食[た]べますか。","今晚吃什麼？"],
+["誕生日","たんじょうび","生日","誕生日[たんじょうび]はいつですか。","生日是什麼時候？"],
+["夏休み","なつやすみ","暑假","夏休[なつやす]みに国[くに]へ帰[かえ]ります。","暑假回國。"],
+["週末","しゅうまつ","週末","週末[しゅうまつ]は何[なに]をしますか。","週末做什麼？"]],"位置・方向":[["上","うえ","上面","テーブルの上[うえ]に花[はな]があります。","桌上有花。"],
+["下","した","下面","机[つくえ]の下[した]にかばんがあります。","桌子下面有包包。"],
+["左","ひだり","左邊","次[つぎ]の角[かど]を左[ひだり]に曲[ま]がってください。","下個轉角請左轉。"],
+["右","みぎ","右邊","銀行[ぎんこう]は右[みぎ]にあります。","銀行在右邊。"],
+["前","まえ","前面","駅[えき]の前[まえ]で待[ま]っています。","在車站前面等。"],
+["後ろ","うしろ","後面","先生[せんせい]の後[うし]ろに立[た]ちます。","站在老師後面。"],
+["中","なか","裡面","箱[はこ]の中[なか]に何[なに]がありますか。","箱子裡有什麼？"],
+["外","そと","外面","外[そと]は寒[さむ]いです。","外面很冷。"],
+["隣","となり","隔壁／旁邊","隣[となり]の部屋[へや]は静[しず]かです。","隔壁房間很安靜。"],
+["近く","ちかく","附近","家[いえ]の近[ちか]くに公園[こうえん]があります。","家附近有公園。"],
+["間","あいだ","之間","銀行[ぎんこう]と本屋[ほんや]の間[あいだ]にあります。","在銀行和書店之間。"],
+["向こう","むこう","對面／那邊","川[かわ]の向[む]こうに山[やま]があります。","河的對面有山。"],
+["東","ひがし","東","東[ひがし]の空[そら]が明[あか]るいです。","東邊的天空很亮。"],
+["西","にし","西","太陽[たいよう]は西[にし]に沈[しず]みます。","太陽從西邊落下。"],
+["南","みなみ","南","南[みなみ]の島[しま]へ行[い]きたいです。","想去南方的島。"],
+["北","きた","北","北[きた]の国[くに]は寒[さむ]いです。","北方的國家很冷。"],
+["ここ","","這裡","ここに名前[なまえ]を書[か]いてください。","請在這裡寫名字。"],
+["そこ","","那裡","そこに座[すわ]ってください。","請坐那裡。"],
+["あそこ","","那邊（遠處）","あそこに交番[こうばん]があります。","那邊有派出所。"]],"疑問詞・指示詞":[["何","なに","什麼","何[なに]を飲[の]みますか。","要喝什麼？"],
+["誰","だれ","誰","あの人[ひと]は誰[だれ]ですか。","那個人是誰？"],
+["いつ","","什麼時候","いつ日本[にほん]へ来[き]ましたか。","什麼時候來日本的？"],
+["どこ","","哪裡","どこで昼[ひる]ご飯[はん]を食[た]べますか。","在哪裡吃午餐？"],
+["どうして","","為什麼","どうして遅[おく]れましたか。","為什麼遲到了？"],
+["どう","","怎麼樣","日本[にほん]の生活[せいかつ]はどうですか。","日本的生活怎麼樣？"],
+["いくら","","多少錢","この靴[くつ]はいくらですか。","這雙鞋多少錢？"],
+["いくつ","","幾個／幾歲","りんごはいくつありますか。","有幾顆蘋果？"],
+["どれ","","哪一個","あなたの傘[かさ]はどれですか。","你的傘是哪一把？"],
+["どちら","","哪邊／哪位","お国[くに]はどちらですか。","您是哪國人？"],
+["これ","","這個","これは私[わたし]の本[ほん]です。","這是我的書。"],
+["それ","","那個","それを見[み]せてください。","請給我看那個。"],
+["あれ","","那個（遠處）","あれは何[なん]ですか。","那是什麼？"],
+["この","","這個〜","この電車[でんしゃ]は東京[とうきょう]へ行[い]きます。","這班電車開往東京。"],
+["その","","那個〜","その本[ほん]は面白[おもしろ]いですか。","那本書有趣嗎？"],
+["あの","","那個〜（遠處）","あの人[ひと]は私[わたし]の先生[せんせい]です。","那個人是我的老師。"],
+["どんな","","什麼樣的","どんな音楽[おんがく]が好[す]きですか。","喜歡什麼樣的音樂？"],
+["何時","なんじ","幾點","何時[なんじ]に起[お]きますか。","幾點起床？"]],"顏色":[["色","いろ","顏色","どんな色[いろ]が好[す]きですか。","喜歡什麼顏色？"],
+["赤い","あかい","紅色的","赤[あか]い花[はな]を買[か]いました。","買了紅色的花。"],
+["青い","あおい","藍色的","青[あお]い海[うみ]がきれいです。","藍色的海很漂亮。"],
+["白い","しろい","白色的","白[しろ]い犬[いぬ]がいます。","有一隻白色的狗。"],
+["黒い","くろい","黑色的","黒[くろ]い靴[くつ]を履[は]きます。","穿黑色的鞋子。"],
+["黄色い","きいろい","黃色的","黄色[きいろ]い帽子[ぼうし]をかぶります。","戴黃色的帽子。"],
+["緑","みどり","綠色","この公園[こうえん]は緑[みどり]が多[おお]いです。","這座公園綠意很多。"],
+["茶色","ちゃいろ","咖啡色","茶色[ちゃいろ]のかばんを持[も]っています。","拿著咖啡色的包包。"],
+["ピンク","","粉紅色","ピンクのシャツを着[き]ています。","穿著粉紅色的襯衫。"],
+["丸い","まるい","圓的","丸[まる]いテーブルを買[か]いました。","買了圓桌。"]],"動詞：日常動作":[["する","","做","日曜日[にちようび]にテニスをします。","星期日打網球。"],
+["ある","","有（物品）／在","机[つくえ]の上[うえ]に辞書[じしょ]があります。","桌上有字典。"],
+["いる","","有（人、動物）／在","庭[にわ]に猫[ねこ]がいます。","院子裡有貓。"],
+["会う","あう","見面","駅[えき]で友達[ともだち]に会[あ]います。","在車站和朋友見面。"],
+["待つ","まつ","等","ここで待[ま]ってください。","請在這裡等。"],
+["作る","つくる","做／製作","晩[ばん]ご飯[はん]を作[つく]ります。","做晚餐。"],
+["使う","つかう","使用","このパソコンを使[つか]ってもいいですか。","可以用這台電腦嗎？"],
+["洗う","あらう","洗","毎日[まいにち]髪[かみ]を洗[あら]います。","每天洗頭髮。"],
+["開ける","あける","打開","箱[はこ]を開[あ]けます。","打開箱子。"],
+["閉める","しめる","關上","窓[まど]を閉[し]めます。","關窗戶。"],
+["つける","","開（燈、電器）","暗[くら]いですから、電気[でんき]をつけます。","因為很暗，所以開燈。"],
+["消す","けす","關掉／擦掉","テレビを消[け]してください。","請關電視。"],
+["着る","きる","穿（上衣）","コートを着[き]ます。","穿大衣。"],
+["脱ぐ","ぬぐ","脫","上着[うわぎ]を脱[ぬ]ぎます。","脫外套。"],
+["履く","はく","穿（鞋、褲）","新[あたら]しい靴[くつ]を履[は]きます。","穿新鞋。"],
+["かぶる","","戴（帽子）","外[そと]では帽子[ぼうし]をかぶります。","在外面戴帽子。"],
+["持つ","もつ","拿／持有","荷物[にもつ]を持[も]ちましょうか。","我幫你拿行李吧？"],
+["置く","おく","放","かばんをここに置[お]いてください。","請把包包放這裡。"],
+["取る","とる","拿／取","その本[ほん]を取[と]ってください。","請幫我拿那本書。"],
+["切る","きる","切／剪","はさみで紙[かみ]を切[き]ります。","用剪刀剪紙。"],
+["入れる","いれる","放入","かばんに本[ほん]を入[い]れます。","把書放進包包。"],
+["出す","だす","拿出／交出","宿題[しゅくだい]を出[だ]してください。","請交作業。"],
+["浴びる","あびる","淋（浴）","朝[あさ]、シャワーを浴[あ]びます。","早上沖澡。"],
+["磨く","みがく","刷／擦亮","寝[ね]る前[まえ]に歯[は]を磨[みが]きます。","睡前刷牙。"],
+["掃除する","そうじする","打掃","週末[しゅうまつ]に部屋[へや]を掃除[そうじ]します。","週末打掃房間。"],
+["洗濯する","せんたくする","洗衣服","天気[てんき]がいい日[ひ]に洗濯[せんたく]します。","天氣好的日子洗衣服。"],
+["働く","はたらく","工作","父[ちち]は銀行[ぎんこう]で働[はたら]いています。","爸爸在銀行工作。"],
+["休む","やすむ","休息／請假","少[すこ]し休[やす]みましょう。","休息一下吧。"],
+["遊ぶ","あそぶ","玩","子供[こども]が公園[こうえん]で遊[あそ]んでいます。","小孩在公園玩。"],
+["歌う","うたう","唱歌","一緒[いっしょ]に歌[うた]を歌[うた]いましょう。","一起唱歌吧。"]],"動詞：移動・往來":[["帰る","かえる","回去","六時[ろくじ]に家[いえ]へ帰[かえ]ります。","六點回家。"],
+["入る","はいる","進入","部屋[へや]に入[はい]ってください。","請進房間。"],
+["出る","でる","出去／離開","毎朝[まいあさ]七時[しちじ]に家[いえ]を出[で]ます。","每天早上七點出門。"],
+["乗る","のる","搭乘","駅[えき]から地下鉄[ちかてつ]に乗[の]ります。","從車站搭地下鐵。"],
+["降りる","おりる","下（車）","次[つぎ]の駅[えき]で降[お]ります。","在下一站下車。"],
+["歩く","あるく","走路","駅[えき]まで歩[ある]きます。","走到車站。"],
+["走る","はしる","跑","毎朝[まいあさ]公園[こうえん]を走[はし]ります。","每天早上在公園跑步。"],
+["泳ぐ","およぐ","游泳","プールで一時間[いちじかん]泳[およ]ぎます。","在游泳池游一小時。"],
+["飛ぶ","とぶ","飛","飛行機[ひこうき]が空[そら]を飛[と]んでいます。","飛機在天上飛。"],
+["曲がる","まがる","轉彎","あの交差点[こうさてん]を右[みぎ]に曲[ま]がります。","在那個路口右轉。"],
+["渡る","わたる","過（橋、馬路）","橋[はし]を渡[わた]ります。","過橋。"],
+["出かける","でかける","出門","母[はは]は買[か]い物[もの]に出[で]かけました。","媽媽出門買東西了。"],
+["着く","つく","抵達","三時[さんじ]に空港[くうこう]に着[つ]きます。","三點抵達機場。"],
+["住む","すむ","居住","私[わたし]は台北[たいぺい]に住[す]んでいます。","我住在台北。"],
+["立つ","たつ","站","ドアの前[まえ]に立[た]たないでください。","請不要站在門前。"],
+["座る","すわる","坐","どうぞ、座[すわ]ってください。","請坐。"],
+["教える","おしえる","教／告訴","姉[あね]は英語[えいご]を教[おし]えています。","姊姊在教英文。"],
+["習う","ならう","學（向人學）","先生[せんせい]にピアノを習[なら]っています。","跟老師學鋼琴。"],
+["覚える","おぼえる","記住","新[あたら]しい言葉[ことば]を覚[おぼ]えます。","記住新的詞。"],
+["忘れる","わすれる","忘記","傘[かさ]を電車[でんしゃ]に忘[わす]れました。","把傘忘在電車上了。"],
+["借りる","かりる","借（入）","友達[ともだち]にペンを借[か]りました。","向朋友借了筆。"],
+["貸す","かす","借（出）","この本[ほん]を貸[か]しましょうか。","這本書借你吧？"],
+["あげる","","給（別人）","友達[ともだち]に花[はな]をあげます。","送花給朋友。"],
+["もらう","","收到／得到","母[はは]に時計[とけい]をもらいました。","從媽媽那裡收到手錶。"],
+["送る","おくる","寄／送","国[くに]の家族[かぞく]に荷物[にもつ]を送[おく]ります。","寄包裹給家鄉的家人。"],
+["売る","うる","賣","あの店[みせ]で切手[きって]を売[う]っています。","那家店有賣郵票。"],
+["言う","いう","說","もう一度[いちど]言[い]ってください。","請再說一次。"],
+["知る","しる","知道／認識","あの人[ひと]を知[し]っていますか。","你認識那個人嗎？"],
+["始まる","はじまる","開始","映画[えいが]は七時[しちじ]に始[はじ]まります。","電影七點開始。"],
+["終わる","おわる","結束","授業[じゅぎょう]は四時[よじ]に終[お]わります。","課四點結束。"]],"い形容詞":[["良い","いい","好的","このカメラはとても良[い]いです。","這台相機非常好。"],
+["悪い","わるい","壞的","今日[きょう]は天気[てんき]が悪[わる]いです。","今天天氣不好。"],
+["長い","ながい","長的","この川[かわ]はとても長[なが]いです。","這條河非常長。"],
+["短い","みじかい","短的","髪[かみ]を短[みじか]く切[き]りました。","把頭髮剪短了。"],
+["多い","おおい","多的","この町[まち]は車[くるま]が多[おお]いです。","這個城鎮車很多。"],
+["少ない","すくない","少的","今日[きょう]は客[きゃく]が少[すく]ないです。","今天客人很少。"],
+["近い","ちかい","近的","学校[がっこう]は家[いえ]から近[ちか]いです。","學校離家很近。"],
+["遠い","とおい","遠的","空港[くうこう]はここから遠[とお]いです。","機場離這裡很遠。"],
+["速い","はやい","快的（速度）","新幹線[しんかんせん]はとても速[はや]いです。","新幹線非常快。"],
+["遅い","おそい","慢的／晚的","このバスは遅[おそ]いです。","這班公車很慢。"],
+["早い","はやい","早的","父[ちち]は朝[あさ]が早[はや]いです。","爸爸早上起得很早。"],
+["重い","おもい","重的","この荷物[にもつ]は重[おも]いです。","這件行李很重。"],
+["軽い","かるい","輕的","このかばんは軽[かる]くて便利[べんり]です。","這個包包又輕又方便。"],
+["強い","つよい","強的","兄[あに]は力[ちから]が強[つよ]いです。","哥哥力氣很大。"],
+["弱い","よわい","弱的","私[わたし]はお酒[さけ]に弱[よわ]いです。","我酒量很差。"],
+["広い","ひろい","寬敞的","この部屋[へや]は広[ひろ]くて明[あか]るいです。","這個房間又寬敞又明亮。"],
+["狭い","せまい","狹窄的","私[わたし]のアパートは狭[せま]いです。","我的公寓很小。"],
+["明るい","あかるい","明亮的","この教室[きょうしつ]は明[あか]るいです。","這間教室很明亮。"],
+["暗い","くらい","暗的","外[そと]はもう暗[くら]いです。","外面已經暗了。"],
+["暖かい","あたたかい","溫暖的","今日[きょう]は暖[あたた]かいですね。","今天很暖和呢。"],
+["涼しい","すずしい","涼爽的","朝[あさ]と夜[よる]は涼[すず]しいです。","早晚很涼爽。"],
+["冷たい","つめたい","冰涼的","冷[つめ]たい水[みず]が飲[の]みたいです。","想喝冰水。"],
+["熱い","あつい","燙的","このスープは熱[あつ]いです。","這碗湯很燙。"],
+["甘い","あまい","甜的","甘[あま]いものが大好[だいす]きです。","最喜歡甜食。"],
+["辛い","からい","辣的","このカレーは辛[から]いです。","這個咖哩很辣。"],
+["面白い","おもしろい","有趣的","あの映画[えいが]は面白[おもしろ]かったです。","那部電影很有趣。"],
+["つまらない","","無聊的","この本[ほん]はつまらないです。","這本書很無聊。"],
+["若い","わかい","年輕的","あの先生[せんせい]は若[わか]いです。","那位老師很年輕。"],
+["痛い","いたい","痛的","歯[は]が痛[いた]いです。","牙齒痛。"],
+["欲しい","ほしい","想要","新[あたら]しい自転車[じてんしゃ]が欲[ほ]しいです。","想要新的腳踏車。"]],"な形容詞":[["上手","じょうず","擅長","田中[たなか]さんは歌[うた]が上手[じょうず]です。","田中先生很會唱歌。"],
+["下手","へた","不擅長","私[わたし]は絵[え]が下手[へた]です。","我不太會畫畫。"],
+["便利","べんり","方便","地下鉄[ちかてつ]は便利[べんり]です。","地下鐵很方便。"],
+["有名","ゆうめい","有名","ここは有名[ゆうめい]なレストランです。","這裡是有名的餐廳。"],
+["親切","しんせつ","親切","あの店[みせ]の人[ひと]は親切[しんせつ]です。","那家店的人很親切。"],
+["大切","たいせつ","重要／珍惜","これは大切[たいせつ]な写真[しゃしん]です。","這是很重要的照片。"],
+["大変","たいへん","辛苦／不得了","毎日[まいにち]の仕事[しごと]は大変[たいへん]です。","每天的工作很辛苦。"],
+["にぎやか","","熱鬧","この町[まち]は夜[よる]もにぎやかです。","這個城鎮晚上也很熱鬧。"],
+["暇","ひま","空閒","明日[あした]は暇[ひま]ですか。","明天有空嗎？"],
+["嫌い","きらい","討厭","私[わたし]は虫[むし]が嫌[きら]いです。","我討厭蟲。"],
+["大好き","だいすき","非常喜歡","私[わたし]は日本[にほん]のアニメが大好[だいす]きです。","我非常喜歡日本動畫。"],
+["丈夫","じょうぶ","堅固／健壯","このかばんは丈夫[じょうぶ]です。","這個包包很耐用。"],
+["立派","りっぱ","氣派／出色","立派[りっぱ]な建物[たてもの]ですね。","真是氣派的建築物呢。"],
+["同じ","おなじ","相同","私[わたし]たちは同[おな]じクラスです。","我們同班。"],
+["いろいろ","","各式各樣","店[みせ]にいろいろな果物[くだもの]があります。","店裡有各式各樣的水果。"],
+["簡単","かんたん","簡單","この料理[りょうり]は簡単[かんたん]です。","這道菜很簡單。"]],"副詞・接續詞":[["とても","","非常","この映画[えいが]はとても面白[おもしろ]いです。","這部電影非常有趣。"],
+["少し","すこし","一點點","日本語[にほんご]が少[すこ]し分[わ]かります。","懂一點日文。"],
+["たくさん","","很多","本[ほん]をたくさん読[よ]みました。","讀了很多書。"],
+["よく","","常常／很好地","よく図書館[としょかん]へ行[い]きます。","常去圖書館。"],
+["時々","ときどき","有時候","時々[ときどき]、映画[えいが]を見[み]ます。","有時候看電影。"],
+["いつも","","總是","いつも七時[しちじ]に起[お]きます。","總是七點起床。"],
+["あまり","","不太〜","肉[にく]はあまり食[た]べません。","不太吃肉。"],
+["全然","ぜんぜん","完全不〜","お酒[さけ]は全然[ぜんぜん]飲[の]みません。","完全不喝酒。"],
+["もう","","已經","もう昼[ひる]ご飯[はん]を食[た]べました。","已經吃過午餐了。"],
+["まだ","","還（沒）","宿題[しゅくだい]はまだ終[お]わっていません。","作業還沒寫完。"],
+["すぐ","","馬上","すぐ行[い]きます。","馬上去。"],
+["ゆっくり","","慢慢地","もう少[すこ]しゆっくり話[はな]してください。","請再說慢一點。"],
+["一緒に","いっしょに","一起","一緒[いっしょ]に帰[かえ]りませんか。","要不要一起回去？"],
+["ちょうど","","剛好","今[いま]、ちょうど十二時[じゅうにじ]です。","現在剛好十二點。"],
+["たぶん","","大概","明日[あした]はたぶん雨[あめ]です。","明天大概會下雨。"],
+["本当に","ほんとうに","真的","本当[ほんとう]にありがとうございました。","真的非常謝謝。"],
+["もっと","","更加","もっと大[おお]きい声[こえ]で話[はな]してください。","請再大聲一點說。"],
+["一番","いちばん","最／第一","スポーツの中[なか]でサッカーが一番[いちばん]好[す]きです。","運動裡最喜歡足球。"],
+["だんだん","","漸漸","だんだん寒[さむ]くなります。","漸漸變冷。"],
+["まっすぐ","","直直地","この道[みち]をまっすぐ歩[ある]きます。","沿這條路直走。"],
+["初めて","はじめて","第一次","初[はじ]めて日本[にほん]へ来[き]ました。","第一次來日本。"],
+["また","","再／又","また明日[あした]来[き]てください。","請明天再來。"],
+["ちょっと","","稍微／一下","ちょっと待[ま]ってください。","請等一下。"],
+["そして","","然後／而且","朝[あさ]ご飯[はん]を食[た]べます。そして、会社[かいしゃ]へ行[い]きます。","吃早餐，然後去公司。"],
+["でも","","可是","日本語[にほんご]は難[むずか]しいです。でも、面白[おもしろ]いです。","日文很難，可是很有趣。"],
+["だから","","所以","雨[あめ]です。だから、出[で]かけません。","下雨了，所以不出門。"],
+["それから","","之後／還有","宿題[しゅくだい]をします。それから、寝[ね]ます。","寫作業，之後睡覺。"],
+["どうぞ","","請","どうぞ、入[はい]ってください。","請進。"]],"興趣・娛樂":[["映画","えいが","電影","週末[しゅうまつ]、映画[えいが]を見[み]に行[い]きませんか。","週末要不要去看電影？"],
+["音楽","おんがく","音樂","音楽[おんがく]を聞[き]くのが好[す]きです。","喜歡聽音樂。"],
+["歌","うた","歌","この歌[うた]を知[し]っていますか。","你知道這首歌嗎？"],
+["写真","しゃしん","照片","家族[かぞく]の写真[しゃしん]を見[み]せます。","給你看家人的照片。"],
+["絵","え","畫","妹[いもうと]は絵[え]を描[か]くのが好[す]きです。","妹妹喜歡畫畫。"],
+["旅行","りょこう","旅行","夏休[なつやす]みに旅行[りょこう]します。","暑假去旅行。"],
+["スポーツ","","運動","どんなスポーツをしますか。","你做什麼運動？"],
+["サッカー","","足球","友達[ともだち]とサッカーをします。","和朋友踢足球。"],
+["野球","やきゅう","棒球","テレビで野球[やきゅう]を見[み]ます。","在電視上看棒球。"],
+["テニス","","網球","土曜日[どようび]にテニスをしましょう。","星期六來打網球吧。"],
+["水泳","すいえい","游泳","水泳[すいえい]は体[からだ]にいいです。","游泳對身體好。"],
+["ギター","","吉他","兄[あに]はギターを弾[ひ]きます。","哥哥彈吉他。"],
+["ピアノ","","鋼琴","子供[こども]の時[とき]、ピアノを習[なら]いました。","小時候學過鋼琴。"],
+["ゲーム","","遊戲","弟[おとうと]は毎日[まいにち]ゲームをします。","弟弟每天玩遊戲。"],
+["雑誌","ざっし","雜誌","電車[でんしゃ]で雑誌[ざっし]を読[よ]みます。","在電車上看雜誌。"],
+["新聞","しんぶん","報紙","父[ちち]は毎朝[まいあさ]新聞[しんぶん]を読[よ]みます。","爸爸每天早上看報紙。"],
+["手紙","てがみ","信","国[くに]の母[はは]に手紙[てがみ]を書[か]きました。","寫信給家鄉的媽媽。"],
+["パーティー","","派對","誕生日[たんじょうび]のパーティーをします。","辦生日派對。"],
+["買い物","かいもの","購物","デパートで買[か]い物[もの]をします。","在百貨公司購物。"],
+["アニメ","","動畫","日本[にほん]のアニメをよく見[み]ます。","常看日本動畫。"]],"城市・建築":[["町","まち","城鎮","私[わたし]の町[まち]は海[うみ]の近[ちか]くです。","我住的城鎮在海邊附近。"],
+["国","くに","國家","いろいろな国[くに]へ行[い]きたいです。","想去各種國家。"],
+["建物","たてもの","建築物","あの高[たか]い建物[たてもの]は何[なん]ですか。","那棟高的建築物是什麼？"],
+["図書館","としょかん","圖書館","図書館[としょかん]で本[ほん]を読[よ]みます。","在圖書館看書。"],
+["喫茶店","きっさてん","咖啡廳","喫茶店[きっさてん]でコーヒーを飲[の]みます。","在咖啡廳喝咖啡。"],
+["レストラン","","餐廳","駅[えき]の近[ちか]くのレストランで食[た]べます。","在車站附近的餐廳吃飯。"],
+["食堂","しょくどう","食堂","大学[だいがく]の食堂[しょくどう]は安[やす]いです。","大學的食堂很便宜。"],
+["スーパー","","超市","スーパーで牛乳[ぎゅうにゅう]を買[か]います。","在超市買牛奶。"],
+["デパート","","百貨公司","デパートで靴[くつ]を買[か]いました。","在百貨公司買了鞋子。"],
+["本屋","ほんや","書店","本屋[ほんや]で雑誌[ざっし]を買[か]いました。","在書店買了雜誌。"],
+["八百屋","やおや","蔬果店","八百屋[やおや]で野菜[やさい]を買[か]います。","在蔬果店買蔬菜。"],
+["交番","こうばん","派出所","交番[こうばん]で道[みち]を聞[き]きます。","在派出所問路。"],
+["映画館","えいがかん","電影院","映画館[えいがかん]は駅[えき]の隣[となり]です。","電影院在車站隔壁。"],
+["大使館","たいしかん","大使館","大使館[たいしかん]へビザを取[と]りに行[い]きます。","去大使館領簽證。"],
+["橋","はし","橋","この橋[はし]は古[ふる]いです。","這座橋很舊。"],
+["交差点","こうさてん","十字路口","次[つぎ]の交差点[こうさてん]を左[ひだり]に曲[ま]がります。","在下一個路口左轉。"],
+["角","かど","轉角","あの角[かど]にコンビニがあります。","那個轉角有便利商店。"],
+["入口","いりぐち","入口","入口[いりぐち]はどこですか。","入口在哪裡？"],
+["出口","でぐち","出口","出口[でぐち]は右[みぎ]です。","出口在右邊。"],
+["階段","かいだん","樓梯","階段[かいだん]で三階[さんがい]へ行[い]きます。","走樓梯到三樓。"],
+["エレベーター","","電梯","エレベーターで五階[ごかい]へ行[い]きます。","搭電梯到五樓。"],
+["地下鉄","ちかてつ","地下鐵","地下鉄[ちかてつ]で会社[かいしゃ]へ行[い]きます。","搭地下鐵去公司。"],
+["タクシー","","計程車","駅[えき]からタクシーに乗[の]りました。","從車站搭了計程車。"],
+["切符","きっぷ","車票","切符[きっぷ]を二枚[にまい]買[か]います。","買兩張票。"]],"物品・文具":[["テレビ","","電視","夜[よる]、テレビを見[み]ます。","晚上看電視。"],
+["ラジオ","","收音機","ラジオで音楽[おんがく]を聞[き]きます。","用收音機聽音樂。"],
+["カメラ","","相機","新[あたら]しいカメラが欲[ほ]しいです。","想要新相機。"],
+["パソコン","","電腦","パソコンで仕事[しごと]をします。","用電腦工作。"],
+["携帯電話","けいたいでんわ","手機","携帯電話[けいたいでんわ]を忘[わす]れました。","忘了帶手機。"],
+["エアコン","","冷氣","暑[あつ]いですから、エアコンをつけます。","因為很熱，所以開冷氣。"],
+["ベッド","","床","ベッドで本[ほん]を読[よ]みます。","在床上看書。"],
+["テーブル","","桌子（餐桌）","テーブルに皿[さら]を並[なら]べます。","把盤子擺到桌上。"],
+["本棚","ほんだな","書架","本棚[ほんだな]に辞書[じしょ]があります。","書架上有字典。"],
+["箱","はこ","箱子／盒子","この箱[はこ]は重[おも]いです。","這個箱子很重。"],
+["紙","かみ","紙","紙[かみ]に名前[なまえ]を書[か]きます。","在紙上寫名字。"],
+["ペン","","筆","ペンを貸[か]してください。","請借我筆。"],
+["ノート","","筆記本","ノートに漢字[かんじ]を書[か]きます。","在筆記本上寫漢字。"],
+["財布","さいふ","錢包","財布[さいふ]を家[いえ]に忘[わす]れました。","把錢包忘在家裡了。"],
+["お金","おかね","錢","お金[かね]を銀行[ぎんこう]に入[い]れます。","把錢存進銀行。"],
+["荷物","にもつ","行李","荷物[にもつ]を部屋[へや]に置[お]きます。","把行李放在房間。"],
+["封筒","ふうとう","信封","封筒[ふうとう]に切手[きって]を貼[は]ります。","在信封上貼郵票。"],
+["切手","きって","郵票","八十円[はちじゅうえん]の切手[きって]をください。","請給我八十日圓的郵票。"],
+["葉書","はがき","明信片","友達[ともだち]に葉書[はがき]を出[だ]します。","寄明信片給朋友。"],
+["石鹸","せっけん","肥皂","石鹸[せっけん]で手[て]を洗[あら]います。","用肥皂洗手。"],
+["薬","くすり","藥","ご飯[はん]の後[あと]で薬[くすり]を飲[の]みます。","飯後吃藥。"],
+["名前","なまえ","名字","お名前[なまえ]は何[なん]ですか。","請問您的名字是？"],
+["言葉","ことば","詞語／語言","この言葉[ことば]の意味[いみ]は何[なん]ですか。","這個詞是什麼意思？"],
+["漢字","かんじ","漢字","毎日[まいにち]漢字[かんじ]を五[いつ]つ覚[おぼ]えます。","每天記五個漢字。"]],"食物・飲料":[["朝ご飯","あさごはん","早餐","朝[あさ]ご飯[はん]は七時[しちじ]です。","早餐是七點。"],
+["昼ご飯","ひるごはん","午餐","昼[ひる]ご飯[はん]を一緒[いっしょ]に食[た]べましょう。","一起吃午餐吧。"],
+["晩ご飯","ばんごはん","晚餐","晩[ばん]ご飯[はん]は何[なに]がいいですか。","晚餐想吃什麼？"],
+["お酒","おさけ","酒","父[ちち]はお酒[さけ]が好[す]きです。","爸爸喜歡喝酒。"],
+["ビール","","啤酒","冷[つめ]たいビールを飲[の]みます。","喝冰啤酒。"],
+["紅茶","こうちゃ","紅茶","紅茶[こうちゃ]に牛乳[ぎゅうにゅう]を入[い]れます。","在紅茶裡加牛奶。"],
+["ジュース","","果汁","オレンジのジュースをください。","請給我柳橙汁。"],
+["牛肉","ぎゅうにく","牛肉","牛肉[ぎゅうにく]を三百[さんびゃく]グラム買[か]います。","買三百公克牛肉。"],
+["豚肉","ぶたにく","豬肉","今晩[こんばん]は豚肉[ぶたにく]の料理[りょうり]です。","今晚是豬肉料理。"],
+["鶏肉","とりにく","雞肉","鶏肉[とりにく]のカレーを作[つく]ります。","做雞肉咖哩。"],
+["カレー","","咖哩","昼[ひる]はカレーを食[た]べました。","中午吃了咖哩。"],
+["ラーメン","","拉麵","駅前[えきまえ]の店[みせ]でラーメンを食[た]べます。","在車站前的店吃拉麵。"],
+["すし","","壽司","日本[にほん]ですしを食[た]べたいです。","想在日本吃壽司。"],
+["ケーキ","","蛋糕","誕生日[たんじょうび]にケーキを食[た]べます。","生日吃蛋糕。"]],"家人・人":[["人","ひと","人","駅[えき]に人[ひと]がたくさんいます。","車站有很多人。"],
+["男","おとこ","男性","あの男[おとこ]の人[ひと]は先生[せんせい]です。","那位男士是老師。"],
+["女","おんな","女性","女[おんな]の人[ひと]が歌[うた]っています。","有位女士在唱歌。"],
+["男の子","おとこのこ","男孩","男[おとこ]の子[こ]が走[はし]っています。","男孩在跑。"],
+["女の子","おんなのこ","女孩","女[おんな]の子[こ]が絵[え]を描[か]いています。","女孩在畫畫。"],
+["大人","おとな","大人","大人[おとな]は千円[せんえん]です。","大人一千日圓。"],
+["あなた","","你","あなたは学生[がくせい]ですか。","你是學生嗎？"],
+["彼","かれ","他／男朋友","彼[かれ]は会社員[かいしゃいん]です。","他是上班族。"],
+["彼女","かのじょ","她／女朋友","彼女[かのじょ]は歌[うた]が上手[じょうず]です。","她很會唱歌。"],
+["お父さん","おとうさん","（別人的）爸爸","お父[とう]さんはお元気[げんき]ですか。","令尊好嗎？"],
+["お母さん","おかあさん","（別人的）媽媽","お母[かあ]さんは料理[りょうり]が上手[じょうず]ですね。","令堂很會做菜呢。"],
+["お兄さん","おにいさん","（別人的）哥哥","お兄[にい]さんは何歳[なんさい]ですか。","你哥哥幾歲？"],
+["お姉さん","おねえさん","（別人的）姊姊","お姉[ねえ]さんはどこに住[す]んでいますか。","你姊姊住在哪裡？"],
+["おじいさん","","爺爺／老先生","おじいさんは毎朝[まいあさ]散歩[さんぽ]します。","爺爺每天早上散步。"],
+["おばあさん","","奶奶／老太太","おばあさんは八十歳[はちじゅっさい]です。","奶奶八十歲。"],
+["両親","りょうしん","父母","両親[りょうしん]は台中[たいちゅう]に住[す]んでいます。","父母住在台中。"],
+["医者","いしゃ","醫生","医者[いしゃ]に薬[くすり]をもらいました。","從醫生那裡拿了藥。"],
+["会社員","かいしゃいん","上班族","私[わたし]は会社員[かいしゃいん]です。","我是上班族。"],
+["警官","けいかん","警察","警官[けいかん]に道[みち]を聞[き]きました。","向警察問了路。"],
+["外国人","がいこくじん","外國人","この町[まち]は外国人[がいこくじん]が多[おお]いです。","這個城鎮外國人很多。"]]};
+for(const c in VOCAB_ADD)(VOCAB[c]=VOCAB[c]||[]).push(...VOCAB_ADD[c]);
+const RUBY=/([一-龯々ヶ]+)\[([^\]]+)\]/g;
+const ruby=s=>s.replace(RUBY,'<ruby>$1<rt>$2</rt></ruby>');
+const plain=s=>s.replace(/\[[^\]]*\]/g,'');
+const CATS=Object.keys(VOCAB);
+let curCat='全部';
+function renderCats(){
+  $('#cats').innerHTML=['全部',...CATS].map(c=>`<button class="chip${c===curCat?' on':''}" data-c="${c}">${c}</button>`).join('');
+}
+function renderWords(){
+  const q=$('#q').value.trim().toLowerCase(); let n=0, html='';
+  for(const c of CATS){
+    if(curCat!=='全部'&&c!==curCat)continue;
+    for(const [w,k,zh,ex,exZh] of VOCAB[c]){
+      if(q&&!(w+k+zh+plain(ex)+exZh).toLowerCase().includes(q))continue;
+      n++;
+      html+=`<article class="w">
+        <div class="w-top"><button class="play" data-say="${k||w}" aria-label="播放單字">▶</button>
+          <div><div class="w-kana">${k}</div><div class="w-word">${w}</div><div class="w-zh">${zh}</div></div>
+          <span class="w-cat">${c}</span></div>
+        <div class="w-ex"><button class="play sm" data-say="${plain(ex)}" aria-label="播放例句">▶</button>
+          <div><p class="ex-ja">${ruby(ex)}</p><p class="ex-zh">${exZh}</p></div></div>
+      </article>`;
+    }
+  }
+  $('#words').innerHTML=html||'<p class="hint">找不到符合的單字。</p>';
+  $('#count').textContent=n+' 個單字';
+}
+$('#cats').onclick=e=>{const b=e.target.closest('.chip'); if(!b)return; curCat=b.dataset.c; renderCats(); renderWords();};
+$('#q').oninput=renderWords;
+$('#ttsRate').onclick=e=>{const b=e.target.closest('button'); if(!b)return; ttsRate=+b.dataset.r; $$('#ttsRate button').forEach(x=>x.classList.toggle('on',x===b));};
+$('#words').addEventListener('click',e=>{const b=e.target.closest('[data-say]'); if(b)speak(b.dataset.say,ttsRate);});
+renderCats(); renderWords();
+
+/* ---------- 分頁 3：YouTube 雙語字幕 ---------- */
+const SUBS_API='/.netlify/functions/subs';
+let player=null, cues={ja:[],zh:[]}, offset=0, loopOn=false, loopIdx=-1, activeIdx=-2, rate=1;
+const RATES=[0.5,0.75,1,1.25,1.5];
+$('#rates').innerHTML=RATES.map(r=>`<button class="btn ghost${r===1?' on':''}" data-r="${r}">${r}×</button>`).join(' ');
+$('#rates').onclick=e=>{
+  const b=e.target.closest('button'); if(!b)return; rate=+b.dataset.r;
+  $$('#rates button').forEach(x=>x.classList.toggle('on',x===b));
+  if(player&&player.setPlaybackRate)player.setPlaybackRate(rate);
+};
+function parseId(s){
+  s=s.trim(); if(/^[\w-]{11}$/.test(s))return s;
+  const m=s.match(/(?:[?&]v=|youtu\.be\/|\/shorts\/|\/embed\/|\/live\/)([\w-]{11})/);
+  return m?m[1]:null;
+}
+function setStatus(t,err){const el=$('#status'); el.textContent=t; el.classList.toggle('err',!!err);}
+function loadYT(){
+  return new Promise(res=>{
+    if(window.YT&&YT.Player)return res();
+    window.onYouTubeIframeAPIReady=res;
+    const s=document.createElement('script'); s.src='https://www.youtube.com/iframe_api'; document.head.appendChild(s);
+  });
+}
+const ON_WEB=/^https?:$/.test(location.protocol);
+const YT_ERR={2:'影片連結或 ID 不正確',5:'這部影片無法在網頁播放器播放',100:'找不到影片（可能已刪除或設為私人）',
+  101:'影片擁有者不允許在其他網站嵌入播放',150:'影片擁有者不允許在其他網站嵌入播放',
+  153:'YouTube 拒絕播放：這個頁面不是從網站網址開啟的（請部署到 Netlify 後再用網址開啟）'};
+let videoMsg='', subMsg='', subErr=false;
+function showMsg(){ setStatus([videoMsg,subMsg].filter(Boolean).join('　｜　'),!!videoMsg||subErr); }
+function showPlayerMsg(t){ const e=$('#playerEmpty'); e.textContent=t; e.hidden=false; }
+async function loadVideo(){
+  const id=parseId($('#url').value);
+  if(!id){videoMsg='看不懂這個連結，請貼上完整的 YouTube 影片網址。';subMsg='';showMsg();return;}
+  videoMsg=''; subMsg=''; subErr=false; setCues([],[]);
+  if(!ON_WEB){
+    videoMsg='目前是直接開啟檔案或在預覽視窗中，YouTube 不允許這樣播放。請把網頁部署到 Netlify，再用 https 網址開啟。';
+    showPlayerMsg('需要部署到 Netlify 後才能播放影片'); showMsg(); return;
+  }
+  $('#playerEmpty').hidden=true;
+  fetchSubs(id);
+  const timer=setTimeout(()=>{ if(!(window.YT&&YT.Player)){videoMsg='YouTube 播放器載入不了，可能是網路或公司／院內防火牆擋住 youtube.com。';showMsg();} },8000);
+  await loadYT(); clearTimeout(timer); videoMsg=''; showMsg();
+  if(player&&player.loadVideoById){player.loadVideoById(id);}
+  else player=new YT.Player('player',{videoId:id,playerVars:{playsinline:1,rel:0,origin:location.origin},
+    events:{onReady:()=>player.setPlaybackRate(rate),
+      onError:e=>{videoMsg='影片無法播放：'+(YT_ERR[e.data]||('YouTube 錯誤代碼 '+e.data));showMsg();},
+      onPlaybackRateChange:e=>{rate=e.data;$$('#rates button').forEach(x=>x.classList.toggle('on',+x.dataset.r===rate));}}});
+}
+async function fetchSubs(id){
+  subErr=false; subMsg='正在抓取字幕…'; showMsg();
+  try{
+    const r=await fetch(SUBS_API+'?v='+id);
+    const j=await r.json().catch(()=>({error:r.status===404?'網站上沒有字幕程式（用拖曳上傳部署時不會包含它，需改用 GitHub 或 CLI 部署）':'字幕服務沒有回應（HTTP '+r.status+'）'}));
+    if(!r.ok||j.error)throw new Error(j.error||('HTTP '+r.status));
+    setCues(j.ja||[],j.zh||[]);
+    if(!cues.ja.length&&!cues.zh.length)throw new Error('這部影片沒有可用的字幕');
+    subMsg=`字幕已載入：日文 ${cues.ja.length} 句${j.jaNote?'（'+j.jaNote+'）':''}、中文 ${cues.zh.length} 句${j.zhNote?'（'+j.zhNote+'）':''}`; showMsg();
+  }catch(e){
+    subErr=true; subMsg='自動抓字幕失敗：'+e.message+'。影片仍可播放與調速；可用下方「手動貼上字幕」。'; showMsg();
+    $('#manualBox').open=true;
+  }
+}
+const fmt=t=>Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0');
+function findCue(arr,t){            // 回傳 t 所在或之前最近一句的 index
+  let lo=0,hi=arr.length-1,ans=-1;
+  while(lo<=hi){const m=(lo+hi)>>1; if(arr[m].s<=t){ans=m;lo=m+1}else hi=m-1}
+  return ans;
+}
+const mainCues=()=>cues.ja.length?cues.ja:cues.zh;
+function setCues(ja,zh){
+  cues={ja,zh}; activeIdx=-2; loopIdx=-1;
+  const list=$('#list'); list.textContent='';
+  const main=mainCues(), isJa=main===cues.ja;
+  main.forEach((c,i)=>{
+    const row=document.createElement('div'); row.className='row'; row.dataset.i=i;
+    const tm=document.createElement('time'); tm.textContent=fmt(c.s);
+    const box=document.createElement('div');
+    const a=document.createElement('div'); a.className=isJa?'ja':'zh'; a.textContent=c.t; box.appendChild(a);
+    if(isJa&&cues.zh.length){
+      const k=findCue(cues.zh,(c.s+c.e)/2);
+      if(k>=0&&cues.zh[k].e>c.s){const b=document.createElement('div'); b.className='zh'; b.textContent=cues.zh[k].t; box.appendChild(b);}
+    }
+    row.append(tm,box); list.appendChild(row);
+  });
+  $('#subJa').textContent=''; $('#subZh').textContent='';
+}
+function seekTo(i){
+  const m=mainCues(); if(!player||!player.seekTo||!m.length)return;
+  i=Math.max(0,Math.min(m.length-1,i));
+  if(loopOn)loopIdx=i;
+  player.seekTo(Math.max(0,m[i].s-offset+0.01),true); player.playVideo();
+}
+function tick(){
+  if(!player||!player.getCurrentTime)return;
+  const t=player.getCurrentTime()+offset, m=mainCues();
+  const at=(arr)=>{const i=findCue(arr,t); return i>=0&&t<arr[i].e?arr[i].t:'';};
+  $('#subJa').textContent=at(cues.ja); $('#subZh').textContent=at(cues.zh);
+  if(!m.length)return;
+  if(loopOn&&loopIdx>=0&&m[loopIdx]&&(t>=m[loopIdx].e-0.05||t<m[loopIdx].s-0.5)&&player.getPlayerState()===1){
+    player.seekTo(Math.max(0,m[loopIdx].s-offset+0.01),true); return;
+  }
+  const i=findCue(m,t);
+  if(i!==activeIdx){
+    activeIdx=i;
+    const old=$('#list .row.on'); if(old)old.classList.remove('on');
+    const row=$('#list').children[i];
+    if(row){row.classList.add('on'); const L=$('#list'); L.scrollTo({top:row.offsetTop-L.offsetTop-L.clientHeight/3,behavior:'smooth'});}
+  }
+}
+setInterval(tick,120);
+$('#load').onclick=loadVideo;
+$('#url').onkeydown=e=>{if(e.key==='Enter')loadVideo();};
+$('#list').onclick=e=>{const r=e.target.closest('.row'); if(r)seekTo(+r.dataset.i);};
+$('#prev').onclick=()=>seekTo(Math.max(0,activeIdx)-1);
+$('#again').onclick=()=>seekTo(Math.max(0,activeIdx));
+$('#next').onclick=()=>seekTo(activeIdx+1);
+$('#loop').onclick=e=>{loopOn=!loopOn; loopIdx=loopOn?Math.max(0,activeIdx):-1; e.currentTarget.classList.toggle('on',loopOn);};
+$('#showJa').onclick=e=>{$('#subJa').hidden=!e.currentTarget.classList.toggle('on');};
+$('#showZh').onclick=e=>{$('#subZh').hidden=!e.currentTarget.classList.toggle('on');};
+function setOffset(d){offset=Math.round((offset+d)*10)/10; $('#offV').textContent=(offset>0?'+':'')+offset.toFixed(1)+'s';}
+$('#offM').onclick=()=>setOffset(-0.2); $('#offP').onclick=()=>setOffset(0.2);
+
+/* 手動字幕（SRT / VTT） */
+function parseSub(txt){
+  const out=[], re=/(?:(\d+):)?(\d+):(\d+)[.,](\d+)\s*-->\s*(?:(\d+):)?(\d+):(\d+)[.,](\d+)/;
+  const sec=(h,m,s,ms)=>(+(h||0))*3600+(+m)*60+(+s)+parseFloat('0.'+ms);
+  for(const b of txt.replace(/\r/g,'').split(/\n\s*\n/)){
+    const lines=b.split('\n'), i=lines.findIndex(l=>re.test(l)); if(i<0)continue;
+    const m=lines[i].match(re), t=lines.slice(i+1).join(' ').replace(/<[^>]+>/g,'').trim();
+    if(t)out.push({s:sec(m[1],m[2],m[3],m[4]),e:sec(m[5],m[6],m[7],m[8]),t});
+  }
+  return out.sort((a,b)=>a.s-b.s);
+}
+for(const [f,t] of [['#fJa','#mJa'],['#fZh','#mZh']])
+  $(f).onchange=async e=>{const file=e.target.files[0]; if(file)$(t).value=await file.text();};
+$('#applyManual').onclick=()=>{
+  const ja=parseSub($('#mJa').value), zh=parseSub($('#mZh').value);
+  if(!ja.length&&!zh.length){setStatus('讀不到字幕內容，請確認是 SRT 或 VTT 格式（含 00:00:01,000 --> 00:00:03,000 這種時間列）。',true);return;}
+  setCues(ja,zh); subErr=false; subMsg=`已套用手動字幕：日文 ${ja.length} 句、中文 ${zh.length} 句`; showMsg();
+};
+</script>
+</body>
+</html>
