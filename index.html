@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>にほんご練習帳 — 50 音・N5 單字・YouTube 雙語字幕</title>
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#F6F3EE">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="にほんご">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400&display=swap" rel="stylesheet">
@@ -107,10 +114,24 @@ h2:first-child{margin-top:4px}
 .ex-ja{font-size:20px;line-height:2}
 .ex-zh{font-size:15px;color:var(--muted)}
 rt{font-size:.55em;color:var(--muted)}
-.play{flex:none;width:40px;height:40px;border-radius:50%;border:var(--bd);background:var(--coral);font-size:13px;display:grid;place-items:center;padding:0 0 0 2px;font-family:sans-serif}
-.play.sm{width:32px;height:32px;font-size:11px;background:var(--water);margin-top:5px}
+.play{flex:none;width:40px;height:40px;border-radius:50%;border:var(--bd);background:var(--coral);display:grid;place-items:center;padding:0 0 0 2px}
+.play.sm{width:32px;height:32px;background:var(--water);margin-top:5px}
 .play:active{background:var(--yellow)}
 
+.ic{width:1.15em;height:1.15em;vertical-align:-.2em;fill:var(--white);stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.play .ic{width:22px;height:22px}
+.play.sm .ic{width:17px;height:17px}
+.urlbox{position:relative;flex:1;min-width:0;display:flex}
+.urlbox input{padding-right:44px}
+#clearUrl{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:32px;height:32px;border:0;background:none;border-radius:50%;display:grid;place-items:center;color:var(--muted)}
+#clearUrl:active{background:var(--yellow)}
+#clearUrl[hidden]{display:none}
+#clearUrl .ic{fill:none;width:20px;height:20px}
+summary{list-style:none;display:flex;align-items:center;gap:6px}
+summary::-webkit-details-marker{display:none}
+summary .ic{fill:none;transition:transform .15s;transform:rotate(-90deg)}
+details[open] summary .ic{transform:none}
+.howto{margin:10px 0 0;padding-left:1.3em;color:var(--muted);font-size:15px}
 /* YouTube */
 .urlrow{display:flex;gap:10px;margin-bottom:16px}
 .urlrow input{flex:1;min-width:0;border:var(--bd);background:var(--white);border-radius:var(--r);padding:8px 14px;outline:0}
@@ -158,6 +179,16 @@ summary{cursor:pointer}
 </style>
 </head>
 <body>
+<!-- 手繪風圖示 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7.4 4.5C6.9 4.3 6.5 4.7 6.5 5.3L6.2 18.6C6.2 19.4 6.9 19.7 7.5 19.3L19.1 12.8C19.7 12.4 19.6 11.7 19 11.4Z"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 24 24"><path d="M6.3 6.7C9.2 6.1 15 6.2 17.8 6.5C18.1 9.2 18.2 15 17.7 17.7C15 18.2 9 18.1 6.4 17.6C5.9 15 6 9.1 6.3 6.7Z"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M18.6 5.4C18.9 9 18.8 15.2 18.4 18.7L8.6 12.2Z"/><path d="M5.9 5.2C5.7 9.5 5.8 14.6 6.1 18.9"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M5.4 5.4C5.1 9 5.2 15.2 5.6 18.7L15.4 12.2Z"/><path d="M18.1 5.2C18.3 9.5 18.2 14.6 17.9 18.9"/></symbol>
+  <symbol id="i-replay" viewBox="0 0 24 24"><path d="M18.9 12.6C18.6 16.4 15.6 19.2 11.9 19.1C8 19 5 15.9 5.1 12C5.2 8.2 8.3 5.2 12.1 5.3C13.9 5.3 15.5 6 16.8 7.2"/><path d="M17.2 3.2L17 7.4L12.9 7.2"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.4 6.2C10 9.8 14 14 17.7 17.9"/><path d="M17.8 6.1C14 10 10.2 13.8 6.2 17.7"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M5.8 9C8 11 10.2 13.2 12.1 15.2C14.1 13.2 16.2 11 18.3 8.9"/></symbol>
+</defs></svg>
 <header>
   <div class="bar">
     <div class="brand">にほんご<span>練習帳</span></div>
@@ -206,7 +237,10 @@ summary{cursor:pointer}
 <!-- ============ 分頁 3：YouTube ============ -->
 <section id="tab-yt" hidden>
   <div class="urlrow">
-    <input id="url" type="url" inputmode="url" placeholder="貼上 YouTube 影片連結，例如 https://www.youtube.com/watch?v=…">
+    <div class="urlbox">
+      <input id="url" type="url" inputmode="url" placeholder="貼上 YouTube 影片連結">
+      <button id="clearUrl" type="button" aria-label="清除連結" title="清除" hidden><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
     <button class="btn" id="load">載入</button>
   </div>
   <div class="yt">
@@ -218,9 +252,9 @@ summary{cursor:pointer}
         <span id="rates"></span>
       </div>
       <div class="ctrl">
-        <button class="btn ghost" id="prev" title="上一句">⏮ 上一句</button>
-        <button class="btn ghost" id="again" title="重聽這句">↻ 重聽</button>
-        <button class="btn ghost" id="next" title="下一句">下一句 ⏭</button>
+        <button class="btn ghost" id="prev" title="上一句"><svg class="ic" aria-hidden="true"><use href="#i-prev"/></svg> 上一句</button>
+        <button class="btn ghost" id="again" title="重聽這句"><svg class="ic" aria-hidden="true"><use href="#i-replay"/></svg> 重聽</button>
+        <button class="btn ghost" id="next" title="下一句">下一句 <svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></button>
       </div>
       <div class="ctrl">
         <button class="btn ghost on" id="showJa">日文</button>
@@ -238,8 +272,12 @@ summary{cursor:pointer}
   </div>
 
   <details id="manualBox">
-    <summary>自動抓不到字幕？手動貼上字幕（SRT／VTT）</summary>
-    <p class="hint">貼上文字或選擇檔案後按「套用字幕」。只有日文也可以，中文欄可留空。</p>
+    <summary><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg>自動抓不到字幕？手動貼上字幕</summary>
+    <p class="hint">貼上文字或選擇檔案後按「套用字幕」。只有日文也可以，中文欄可留空。可以貼兩種格式：</p>
+    <ul class="howto">
+      <li>SRT／VTT 字幕檔的內容</li>
+      <li>YouTube 的「轉錄稿」：用電腦開影片 → 說明欄最下面按「顯示轉錄稿」→ 把右側整段（含時間）選取複製貼上</li>
+    </ul>
     <div class="manual">
       <div><label>日文字幕</label><textarea id="mJa" placeholder="1&#10;00:00:01,000 --> 00:00:03,500&#10;こんにちは"></textarea><input type="file" id="fJa" accept=".srt,.vtt,.txt"></div>
       <div><label>中文字幕</label><textarea id="mZh" placeholder="1&#10;00:00:01,000 --> 00:00:03,500&#10;你好"></textarea><input type="file" id="fZh" accept=".srt,.vtt,.txt"></div>
@@ -248,7 +286,7 @@ summary{cursor:pointer}
   </details>
 </section>
 </main>
-<button id="stopBtn" hidden>■ 停止播放</button>
+<button id="stopBtn" hidden><svg class="ic" aria-hidden="true"><use href="#i-stop"/></svg> 停止播放</button>
 
 <script>
 "use strict";
@@ -856,10 +894,10 @@ function renderWords(){
       if(q&&!(w+k+zh+plain(ex)+exZh).toLowerCase().includes(q))continue;
       n++;
       html+=`<article class="w">
-        <div class="w-top"><button class="play" data-say="${k||w}" aria-label="播放單字">▶</button>
+        <div class="w-top"><button class="play" data-say="${k||w}" aria-label="播放單字"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg></button>
           <div><div class="w-kana">${k}</div><div class="w-word">${w}</div><div class="w-zh">${zh}</div></div>
           <span class="w-cat">${c}</span></div>
-        <div class="w-ex"><button class="play sm" data-say="${plain(ex)}" aria-label="播放例句">▶</button>
+        <div class="w-ex"><button class="play sm" data-say="${plain(ex)}" aria-label="播放例句"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg></button>
           <div><p class="ex-ja">${ruby(ex)}</p><p class="ex-zh">${exZh}</p></div></div>
       </article>`;
     }
@@ -926,12 +964,12 @@ async function fetchSubs(id){
   try{
     const r=await fetch(SUBS_API+'?v='+id);
     const j=await r.json().catch(()=>({error:r.status===404?'網站上沒有字幕程式（用拖曳上傳部署時不會包含它，需改用 GitHub 或 CLI 部署）':'字幕服務沒有回應（HTTP '+r.status+'）'}));
-    if(!r.ok||j.error)throw new Error(j.error||('HTTP '+r.status));
+    if(!r.ok||j.error){const er=new Error(j.error||('HTTP '+r.status)); er.needKey=j.needKey; throw er;}
     setCues(j.ja||[],j.zh||[]);
     if(!cues.ja.length&&!cues.zh.length)throw new Error('這部影片沒有可用的字幕');
     subMsg=`字幕已載入：日文 ${cues.ja.length} 句${j.jaNote?'（'+j.jaNote+'）':''}、中文 ${cues.zh.length} 句${j.zhNote?'（'+j.zhNote+'）':''}`; showMsg();
   }catch(e){
-    subErr=true; subMsg='自動抓字幕失敗：'+e.message+'。影片仍可播放與調速；可用下方「手動貼上字幕」。'; showMsg();
+    subErr=true; subMsg='自動抓字幕失敗：'+e.message+'。影片仍可播放與調速；'+(e.needKey?'要自動抓字幕需在 Netlify 設定字幕服務金鑰（見 README），或':'可')+'用下方「手動貼上字幕」。'; showMsg();
     $('#manualBox').open=true;
   }
 }
@@ -985,6 +1023,8 @@ function tick(){
 setInterval(tick,120);
 $('#load').onclick=loadVideo;
 $('#url').onkeydown=e=>{if(e.key==='Enter')loadVideo();};
+$('#url').oninput=()=>{$('#clearUrl').hidden=!$('#url').value;};
+$('#clearUrl').onclick=()=>{$('#url').value='';$('#clearUrl').hidden=true;$('#url').focus();};
 $('#list').onclick=e=>{const r=e.target.closest('.row'); if(r)seekTo(+r.dataset.i);};
 $('#prev').onclick=()=>seekTo(Math.max(0,activeIdx)-1);
 $('#again').onclick=()=>seekTo(Math.max(0,activeIdx));
@@ -1004,13 +1044,23 @@ function parseSub(txt){
     const m=lines[i].match(re), t=lines.slice(i+1).join(' ').replace(/<[^>]+>/g,'').trim();
     if(t)out.push({s:sec(m[1],m[2],m[3],m[4]),e:sec(m[5],m[6],m[7],m[8]),t});
   }
-  return out.sort((a,b)=>a.s-b.s);
+  if(out.length)return out.sort((a,b)=>a.s-b.s);
+  // YouTube「轉錄稿」格式：一行時間（0:05 或 1:02:03），後面接一到多行文字
+  const ts=/^\s*(?:(\d+):)?(\d{1,2}):(\d{2})\s*$/; let cur=null;
+  for(const line of txt.replace(/\r/g,'').split('\n')){
+    const m=line.match(ts);
+    if(m){cur={s:(+(m[1]||0))*3600+(+m[2])*60+(+m[3]),e:0,t:''}; out.push(cur);}
+    else if(cur&&line.trim())cur.t=(cur.t+' '+line.trim()).trim();
+  }
+  const res=out.filter(c=>c.t).sort((a,b)=>a.s-b.s);
+  res.forEach((c,i)=>{c.e=res[i+1]?res[i+1].s:c.s+5;});
+  return res.filter(c=>c.e>c.s);
 }
 for(const [f,t] of [['#fJa','#mJa'],['#fZh','#mZh']])
   $(f).onchange=async e=>{const file=e.target.files[0]; if(file)$(t).value=await file.text();};
 $('#applyManual').onclick=()=>{
   const ja=parseSub($('#mJa').value), zh=parseSub($('#mZh').value);
-  if(!ja.length&&!zh.length){setStatus('讀不到字幕內容，請確認是 SRT 或 VTT 格式（含 00:00:01,000 --> 00:00:03,000 這種時間列）。',true);return;}
+  if(!ja.length&&!zh.length){setStatus('讀不到字幕內容，請確認是 SRT／VTT 格式，或 YouTube 轉錄稿（每句前面有 0:05 這種時間）。',true);return;}
   setCues(ja,zh); subErr=false; subMsg=`已套用手動字幕：日文 ${ja.length} 句、中文 ${zh.length} 句`; showMsg();
 };
 </script>
